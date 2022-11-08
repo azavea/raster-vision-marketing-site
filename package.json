@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "python3 -m http.server --directory src"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}
