@@ -1,4 +1,17 @@
 {
+  "name": "@azavea/raster-vision-website2",
+  "description": "Marketing site for the Raster Vision repo.",
+  "main": "src/index.js",
+  "author": "Azavea",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/azavea/raster-vision-website2",
+  "bugs": {
+    "url": "https://github.com/azavea/raster-vision-website2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azavea/raster-vision-website2.git"
+  },
   "scripts": {
     "start": "python3 -m http.server --directory src",
     "deploy": "gh-pages -d src"
