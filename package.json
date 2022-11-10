@@ -13,14 +13,12 @@
     "url": "https://github.com/azavea/raster-vision-website2.git"
   },
   "scripts": {
-    "start": "python3 -m http.server --directory src",
-    "deploy": "gh-pages -d src"
+    "start": "python3 -m http.server --directory src"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.2"
   },
   "dependencies": {
-    "gh-pages": "^4.0.0",
     "jquery": "^3.6.1"
   }
 }
