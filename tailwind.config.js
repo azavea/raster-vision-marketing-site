@@ -3,6 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
+      sm: "640px",
+      md: "768px",
       lg: "1080px",
     },
     container: {
@@ -27,6 +29,9 @@ module.exports = {
       },
       "gradient-left": "#031617",
       "gradient-right": "#2A3644",
+      "background-off-white": "#FDFDFD",
+      "background-blue": "#2A3644",
+      "footer-blue": "#1F2934",
     },
     fontSize: {
       xs: "0.75rem",
@@ -49,6 +54,9 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "ui-sans-serif"],
+      },
+      maxWidth: {
+        max: "1080px",
       },
     },
   },
