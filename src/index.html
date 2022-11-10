@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-poppins">
   <head>
     <title>Raster Vision</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
   </head>
 
   <body>
-    <h1 class="text-3xl font-bold underline">Raster Vision is great!</h1>
+    <h1>Raster Vision is great!</h1>
     <section>
-      <p class="text-xl font-medium text-red-900">Testing JS:</p>
-      <button type="button" onclick="printToConsole()">Click Me!</button>
+      <h4>Testing JS</h4>
+      <button
+        class="call-to-action-btn"
+        type="button"
+        onclick="printToConsole()"
+      >
+        Click Me!
+      </button>
+      <button class="secondary-btn" type="button">Don't click me</button>
     </section>
   </body>
 </html>

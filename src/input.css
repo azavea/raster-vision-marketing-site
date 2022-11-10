@@ -1,3 +1,55 @@
 @import "tailwindcss/base";
+
+.xsmall-body {
+  @apply font-normal text-xs text-gray;
+}
+
+.small-body {
+  @apply font-normal text-sm text-gray;
+}
+
+.medium-body {
+  @apply font-normal text-med text-gray;
+}
+
+.large-body {
+  @apply font-normal text-lg text-gray;
+}
+
+.display {
+  @apply font-normal text-4xl text-teal;
+}
+
+.h3-blue {
+  @apply font-semibold text-lg text-teal;
+}
+
+.call-to-action-btn {
+  @apply rounded bg-teal-button text-white p-2;
+}
+
+.secondary-btn {
+  @apply rounded bg-white text-black border-gray-button border-1 p-2;
+}
+
+.gradient {
+  @apply bg-gradient-to-r from-gradient-left to-gradient-right;
+}
+
+@layer base {
+  h1 {
+    @apply font-normal text-3xl text-black;
+  }
+  h2 {
+    @apply font-normal text-2xl text-black;
+  }
+  h3 {
+    @apply font-semibold text-lg text-black;
+  }
+  h4 {
+    @apply font-semibold text-med text-gray uppercase;
+  }
+}
+
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
