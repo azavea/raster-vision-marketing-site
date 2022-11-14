@@ -1,5 +1,4 @@
 @import "tailwindcss/base";
-
 .xsmall-body {
   @apply font-normal text-xs text-gray;
 }
@@ -17,7 +16,7 @@
 }
 
 .display {
-  @apply font-normal text-4xl text-teal;
+  @apply font-normal text-4xl leading-display text-teal;
 }
 
 .h3-blue {

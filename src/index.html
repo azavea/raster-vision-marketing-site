@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/output.css" />
@@ -17,17 +17,32 @@
 
   <body>
     <section>
-      <div class="bg-background-off-white">
-        <div class="max-width-container">
-          <h1>Raster Vision is great!</h1>
-          <button
-            class="call-to-action-btn"
-            type="button"
-            onclick="printToConsole()"
-          >
-            Click Me!
-          </button>
-          <button class="secondary-btn" type="button">Don't click me</button>
+      <div class="relative bg-background-off-white">
+        <img
+          src="images/hero-trafficdensity.jpg"
+          class="absolute right-0 h-hero"
+        />
+        <div class="max-width-container h-hero py-0">
+          <div class="absolute max-w-lg top-40">
+            <h2>An open-source ML library for</h2>
+            <p class="display mt-2">
+              deep learning on satellite and aerial imagery_
+            </p>
+            <div class="flex gap-3 mt-7">
+              <div class="rounded-full bg-gray-50 h-hero-button w-hero-button">
+                <img
+                  src="images/icon-chevron-left.svg"
+                  class="mx-auto my-hero-button"
+                />
+              </div>
+              <div class="rounded-full bg-gray-50 h-hero-button w-hero-button">
+                <img
+                  src="images/icon-chevron-right.svg"
+                  class="mx-auto my-hero-button"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

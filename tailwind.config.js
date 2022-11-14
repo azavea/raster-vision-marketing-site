@@ -58,6 +58,19 @@ module.exports = {
       maxWidth: {
         max: "1080px",
       },
+      height: {
+        hero: "775px",
+        "hero-button": "35px",
+      },
+      width: {
+        "hero-button": "35px",
+      },
+      margin: {
+        "hero-button": "11px",
+      },
+      lineHeight: {
+        display: "64px",
+      },
     },
   },
   plugins: [],
