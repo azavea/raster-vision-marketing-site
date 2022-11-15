@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,25 +21,71 @@
       <div class="relative bg-background-off-white">
         <img
           src="images/hero-trafficdensity.jpg"
-          class="absolute right-0 h-hero"
+          alt="Traffic on a highway interchange"
+          class="hero-image in-view"
+          id="hero-img-0"
+        />
+        <img
+          src="images/hero-crophealth2.jpg"
+          alt="Aerial view of fields of crops"
+          class="hero-image hidden"
+          id="hero-img-1"
+        />
+        <img
+          src="images/hero-forestloss.jpg"
+          alt="Color-coded map reflecting forest loss"
+          class="hero-image hidden"
+          id="hero-img-2"
+        />
+        <img
+          src="images/placeholder.svg"
+          alt="Close up of a cell nucleus"
+          class="hero-image hidden"
+          id="hero-img-3"
+        />
+        <img
+          src="images/hero-ripcurrents.jpg"
+          alt="Aerial view of a hurricane"
+          class="hero-image hidden"
+          id="hero-img-4"
+        />
+        <img
+          src="images/hero-solarirradiation.jpg"
+          alt="Satellite imagery of a solar farm"
+          class="hero-image hidden"
+          id="hero-img-5"
+        />
+        <img
+          src="images/hero-stormdamage.jpg"
+          alt="A flooded suburban neighborhood"
+          class="hero-image hidden"
+          id="hero-img-6"
         />
         <div class="max-width-container h-hero py-0">
           <div class="absolute max-w-lg top-40">
             <h2>An open-source ML library for</h2>
-            <p class="display mt-2">
-              deep learning on satellite and aerial imagery_
+            <p id="hero-text" class="display mt-2">
+              measuring traffic density_
             </p>
-            <div class="flex gap-3 mt-7">
-              <div class="rounded-full bg-gray-50 h-hero-button w-hero-button">
+          </div>
+          <div class="absolute mt-hero-button">
+            <div class="flex gap-3">
+              <div
+                id="left-button"
+                class="rounded-full bg-gray-50 h-hero-button w-hero-button"
+              >
                 <img
                   src="images/icon-chevron-left.svg"
-                  class="mx-auto my-hero-button"
+                  class="mx-auto my-hero-button-arrow"
                 />
               </div>
-              <div class="rounded-full bg-gray-50 h-hero-button w-hero-button">
+              <div
+                id="right-button"
+                class="rounded-full bg-gray-50 h-hero-button w-hero-button"
+              >
                 <img
                   src="images/icon-chevron-right.svg"
-                  class="mx-auto my-hero-button"
+                  class="mx-auto my-hero-button-arrow"
                 />
               </div>
             </div>
@@ -251,5 +298,18 @@
         </div>
       </div>
     </section>
+    <script>
+      let interval = setInterval(changeHeroTextAndImage, 5000, true);
+      $("#left-button").click(function () {
+        clearInterval(interval);
+        changeHeroTextAndImage(false);
+        interval = setInterval(changeHeroTextAndImage, 5000, true);
+      });
+      $("#right-button").click(function () {
+        clearInterval(interval);
+        changeHeroTextAndImage(true);
+        interval = setInterval(changeHeroTextAndImage, 5000, true);
+      });
+    </script>
   </body>
 </html>

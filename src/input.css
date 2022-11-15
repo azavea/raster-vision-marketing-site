@@ -58,6 +58,10 @@
   .tech-spec {
     @apply xsmall-body m-5;
   }
+
+  .hero-image {
+    @apply absolute right-0 h-hero;
+  }
 }
 
 @import "tailwindcss/components";

@@ -66,7 +66,8 @@ module.exports = {
         "hero-button": "35px",
       },
       margin: {
-        "hero-button": "11px",
+        "hero-button-arrow": "11px",
+        "hero-button": "430px",
       },
       lineHeight: {
         display: "64px",
