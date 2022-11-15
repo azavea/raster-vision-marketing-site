@@ -26,11 +26,37 @@ function changeHeroTextAndImage(moveForward) {
   // get and show next image
   const nextImgElem = document.getElementById(`hero-img-${nextIndex}`);
   nextImgElem.classList.add("in-view");
-  nextImgElem.classList.remove("hidden");
+  fadeIn(nextImgElem);
   // remove current image after addition to prevent flickering
   currentImgElem.classList.remove("in-view");
-  currentImgElem.classList.add("hidden");
+  fadeOut(currentImgElem);
   // replace hero text to match new slide
   const textElem = document.getElementById("hero-text");
   textElem.innerText = heroText[nextIndex];
+}
+
+function fadeOut(element) {
+  var op = 1; // initial opacity
+  var timer = setInterval(function () {
+    if (op <= 0.1) {
+      clearInterval(timer);
+      element.style.display = "none";
+    }
+    element.style.opacity = op;
+    element.style.filter = "alpha(opacity=" + op * 100 + ")";
+    op -= op * 0.1;
+  }, 50);
+}
+
+function fadeIn(element) {
+  var op = 0.1; // initial opacity
+  element.style.display = "block";
+  var timer = setInterval(function () {
+    if (op >= 1) {
+      clearInterval(timer);
+    }
+    element.style.opacity = op;
+    element.style.filter = "alpha(opacity=" + op * 100 + ")";
+    op += op * 0.1;
+  }, 10);
 }
