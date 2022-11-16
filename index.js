@@ -12,51 +12,18 @@ function changeHeroTextAndImage(moveForward) {
   // find visible image id
   const currentImgElem = document.getElementsByClassName("in-view")[0];
   const currentIndex = parseInt(currentImgElem.id.split("-")[2]);
-  // restart from start or end and move left or right
+  // determine direction and then use mod operator to wrap if needed
+  const increment = moveForward ? 1 : -1;
   const nextIndex =
-    moveForward && currentIndex == heroText.length - 1
-      ? 0
-      : !moveForward && currentIndex == 0
-      ? heroText.length - 1
-      : moveForward
-      ? currentIndex + 1
-      : !moveForward
-      ? currentIndex - 1
-      : 0;
+    (currentIndex + increment + heroText.length) % heroText.length;
   // get and show next image
   const nextImgElem = document.getElementById(`hero-img-${nextIndex}`);
   nextImgElem.classList.add("in-view");
-  fadeIn(nextImgElem);
+  $(`#hero-img-${nextIndex}`).fadeIn();
   // remove current image after addition to prevent flickering
   currentImgElem.classList.remove("in-view");
-  fadeOut(currentImgElem);
+  $(`#hero-img-${currentIndex}`).fadeOut();
   // replace hero text to match new slide
   const textElem = document.getElementById("hero-text");
   textElem.innerText = heroText[nextIndex];
-}
-
-function fadeOut(element) {
-  var op = 1; // initial opacity
-  var timer = setInterval(function () {
-    if (op <= 0.1) {
-      clearInterval(timer);
-      element.style.display = "none";
-    }
-    element.style.opacity = op;
-    element.style.filter = "alpha(opacity=" + op * 100 + ")";
-    op -= op * 0.1;
-  }, 50);
-}
-
-function fadeIn(element) {
-  var op = 0.1; // initial opacity
-  element.style.display = "block";
-  var timer = setInterval(function () {
-    if (op >= 1) {
-      clearInterval(timer);
-    }
-    element.style.opacity = op;
-    element.style.filter = "alpha(opacity=" + op * 100 + ")";
-    op += op * 0.1;
-  }, 10);
 }
