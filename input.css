@@ -62,6 +62,10 @@
   .hero-image {
     @apply absolute right-0 h-hero;
   }
+
+  .hero-external-buttons {
+    @apply bg-gray-100 p-3.5 w-64 rounded-xl cursor-pointer;
+  }
 }
 
 @import "tailwindcss/components";
