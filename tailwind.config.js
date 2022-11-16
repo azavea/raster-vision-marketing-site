@@ -72,6 +72,9 @@ module.exports = {
       lineHeight: {
         display: "64px",
       },
+      spacing: {
+        "hero-shape": "250px",
+      },
     },
   },
   plugins: [],
