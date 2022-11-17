@@ -60,11 +60,11 @@
   }
 
   .hero-image {
-    @apply absolute right-0 h-hero;
+    @apply absolute bottom-0 scale-125 object-cover sm:h-hero-img sm:transform-none;
   }
 
   .hero-external-buttons {
-    @apply bg-gray-100 p-3.5 w-64 rounded-xl cursor-pointer;
+    @apply bg-gray-100 p-3.5 w-80 rounded-xl cursor-pointer mb-3 sm:w-64;
   }
 }
 

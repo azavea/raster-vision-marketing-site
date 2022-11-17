@@ -16,9 +16,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?" />
   </head>
 
-  <body>
-    <section>
-      <div class="relative bg-background-off-white">
+  <body class="overflow-x-hidden">
+    <section class="bg-background-off-white">
+      <div
+        class="absolute top-0 w-full h-96 sm:right-0 sm:w-hero sm:max-w-hero sm:h-hero sm:min-h-hero overflow-hidden"
+      >
         <img
           src="images/hero-trafficdensity.jpg"
           alt="Traffic on a highway interchange"
@@ -61,38 +63,52 @@
           class="hero-image hidden"
           id="hero-img-6"
         />
-        <img src="images/heroshape.svg" class="absolute h-hero right-64" />
-        <div class="max-width-container h-hero py-0">
-          <img src="images/rv-logo.svg" class="absolute top-14" />
-          <div class="absolute max-w-lg top-40">
-            <h2>An open-source ML library for</h2>
-            <p id="hero-text" class="display mt-2">
+        <img
+          src="images/heroshape.svg"
+          class="relative bottom-36 -left-1 -rotate-90 sm:transform-none sm:min-w-hero-shape sm:bottom-0"
+        />
+      </div>
+      <div class="flex max-width-container w-full py-0 sm:min-h-hero">
+        <div class="flex flex-col max-w-linked-buttons w-3/4 left-0">
+          <div>
+            <img
+              src="images/rv-logo.svg"
+              class="relative top-14 hidden sm:block max-h-6"
+            />
+          </div>
+          <div class="sm:h-40"></div>
+          <div class="max-w-header-text z-50">
+            <h2 class="text-lg sm:text-2xl">An open-source ML library for</h2>
+            <p
+              id="hero-text"
+              class="display mt-2 text-3xl leading-tight sm:text-4xl"
+            >
               measuring traffic density_
             </p>
           </div>
-          <div class="absolute mt-hero-button">
-            <div class="flex gap-3">
-              <div
-                id="left-button"
-                class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
-              >
-                <img
-                  src="images/icon-chevron-left.svg"
-                  class="mx-auto my-hero-button-arrow"
-                />
-              </div>
-              <div
-                id="right-button"
-                class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
-              >
-                <img
-                  src="images/icon-chevron-right.svg"
-                  class="mx-auto my-hero-button-arrow"
-                />
-              </div>
+          <div class="h-10"></div>
+          <div class="flex gap-3 top-8 sm:top-32">
+            <div
+              id="left-button"
+              class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
+            >
+              <img
+                src="images/icon-chevron-left.svg"
+                class="mx-auto my-hero-button-arrow"
+              />
+            </div>
+            <div
+              id="right-button"
+              class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
+            >
+              <img
+                src="images/icon-chevron-right.svg"
+                class="mx-auto my-hero-button-arrow"
+              />
             </div>
           </div>
-          <div class="absolute bottom-28 flex flex-row gap-3.5">
+          <div class="h-20"></div>
+          <div class="top-16 flex flex-wrap sm:top-52 gap-x-3.5 z-50">
             <a href="https://github.com/azavea/raster-vision">
               <div class="hero-external-buttons group">
                 <h1 class="group-hover:text-teal">Get started</h1>
