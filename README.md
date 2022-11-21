@@ -10,6 +10,6 @@ The redesigned marketing site for the Raster Vision repo.
 
 **Development**
 
-To compile the code with Tailwind CSS and update on style change, run `npx tailwindcss -i ./src/input.css -o ./src/dist/output.css --watch`.
+To compile the code with Tailwind CSS and update on style change, run `npm run compile-css`.
 
 In another tab, start the server by running `npm start`. View at localhost:8000. Refresh to see changes.
