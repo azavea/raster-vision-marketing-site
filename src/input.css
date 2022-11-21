@@ -60,7 +60,7 @@
   }
 
   .hero-image {
-    @apply absolute bottom-0 scale-125 object-cover sm:h-hero-img sm:transform-none;
+    @apply absolute bottom-0 -rotate-90 object-left object-cover sm:h-hero sm:transform-none;
   }
 
   .hero-external-buttons {

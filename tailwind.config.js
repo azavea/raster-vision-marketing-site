@@ -61,21 +61,13 @@ module.exports = {
         hero: "40%",
         "header-text": "80%",
       },
-      minWidth: {
-        "hero-shape": "541.5px",
-        hero: "775px",
-      },
       minHeight: {
         hero: "775px",
-      },
-      maxHeight: {
-        hero: "775px",
+        "hero-text": "200px",
       },
       height: {
         hero: "775px",
         "hero-button": "35px",
-        "hero-img": "774px",
-        "small-hero": "705px",
       },
       width: {
         hero: "775px",
@@ -85,16 +77,9 @@ module.exports = {
       margin: {
         "hero-button-arrow": "11px",
         "hero-button": "430px",
-        "hero-button-xsm": "550px",
       },
       lineHeight: {
         display: "64px",
-      },
-      spacing: {
-        "hero-shape": "9%",
-        "external-buttons": "70%",
-        "external-buttons-xsm": "65%",
-        "small-hero": "450px",
       },
     },
   },

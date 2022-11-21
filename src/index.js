@@ -1,37 +1,37 @@
 const heroTextAndImage = [
   {
     text: "measuring traffic density_",
-    src: "images/hero-trafficdensity.jpg",
+    src: "images/hero-trafficdensity.png",
     alt: "Traffic on a highway interchange",
   },
   {
     text: "understanding crop health_",
-    src: "images/hero-crophealth2.jpg",
+    src: "images/hero-crophealth2.png",
     alt: "Aerial view of fields of crops",
   },
   {
     text: "tracking forest loss_",
-    src: "images/hero-forestloss.jpg",
+    src: "images/hero-forestloss.png",
     alt: "Color-coded map reflecting forest loss",
   },
   {
     text: "cell nuclei detection_",
-    src: "images/placeholder.svg",
+    src: "images/hero-nucleidetection.png",
     alt: "Close up of a cell nucleus",
   },
   {
     text: "forecasting rip currents_",
-    src: "images/hero-ripcurrents.jpg",
+    src: "images/hero-ripcurrents.png",
     alt: "Aerial view of a hurricane",
   },
   {
     text: "prediction of hourly global solar irradiation_",
-    src: "images/hero-solarirradiation.jpg",
+    src: "images/hero-solarirradiation.png",
     alt: "Satellite imagery of a solar farm",
   },
   {
     text: "assessing storm damage_",
-    src: "images/hero-stormdamage.jpg",
+    src: "images/hero-stormdamage.png",
     alt: "A flooded suburban neighborhood",
   },
 ];
