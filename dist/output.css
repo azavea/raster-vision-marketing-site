@@ -619,12 +619,24 @@ h4 {
 
 .hero-image {
   position: absolute;
-  right: 0px;
-  height: 775px;
+  bottom: 0px;
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 640px) {
+  .hero-image {
+    height: 774px;
+    transform: none;
+  }
 }
 
 .hero-external-buttons {
-  width: 16rem;
+  margin-bottom: 0.75rem;
+  width: 20rem;
   cursor: pointer;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
@@ -632,32 +644,50 @@ h4 {
   padding: 0.875rem;
 }
 
-.visible {
-  visibility: visible;
+@media (min-width: 640px) {
+  .hero-external-buttons {
+    width: 16rem;
+  }
 }
 
-.absolute {
-  position: absolute;
+.visible {
+  visibility: visible;
 }
 
 .relative {
   position: relative;
 }
 
-.right-64 {
-  right: 16rem;
+.top-0 {
+  top: 0px;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.-left-1 {
+  left: -0.25rem;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .top-14 {
   top: 3.5rem;
 }
 
-.top-40 {
-  top: 10rem;
+.top-8 {
+  top: 2rem;
 }
 
-.bottom-28 {
-  bottom: 7rem;
+.top-16 {
+  top: 4rem;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .m-auto {
@@ -693,10 +723,6 @@ h4 {
   margin-top: 0.5rem;
 }
 
-.mt-hero-button {
-  margin-top: 430px;
-}
-
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -717,24 +743,48 @@ h4 {
   display: none;
 }
 
-.h-hero {
-  height: 775px;
+.h-96 {
+  height: 24rem;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-hero-button {
   height: 35px;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.max-h-6 {
+  max-height: 1.5rem;
+}
+
 .max-h-48 {
   max-height: 12rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-hero-button {
   width: 35px;
 }
 
-.max-w-lg {
-  max-width: 32rem;
+.max-w-linked-buttons {
+  max-width: 75%;
+}
+
+.max-w-header-text {
+  max-width: 80%;
 }
 
 .max-w-xl {
@@ -749,6 +799,11 @@ h4 {
   flex-basis: 33.333333%;
 }
 
+.-rotate-90 {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -757,20 +812,20 @@ h4 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-col-reverse {
   flex-direction: column-reverse;
 }
 
-.gap-3 {
-  gap: 0.75rem;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-.gap-3\.5 {
-  gap: 0.875rem;
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-10 {
@@ -779,6 +834,24 @@ h4 {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-x-3\.5 {
+  -moz-column-gap: 0.875rem;
+       column-gap: 0.875rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-full {
@@ -842,6 +915,18 @@ h4 {
   font-family: Poppins, ui-sans-serif;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-3xl {
+  font-size: 2rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -857,6 +942,26 @@ h4 {
 }
 
 @media (min-width: 640px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:right-0 {
+    right: 0px;
+  }
+
+  .sm\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .sm\:top-32 {
+    top: 8rem;
+  }
+
+  .sm\:top-52 {
+    top: 13rem;
+  }
+
   .sm\:m-0 {
     margin: 0px;
   }
@@ -866,12 +971,44 @@ h4 {
     margin-bottom: 0px;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
   }
 
   .sm\:grid {
     display: grid;
+  }
+
+  .sm\:h-hero {
+    height: 775px;
+  }
+
+  .sm\:h-40 {
+    height: 10rem;
+  }
+
+  .sm\:min-h-hero {
+    min-height: 775px;
+  }
+
+  .sm\:w-hero {
+    width: 775px;
+  }
+
+  .sm\:min-w-hero-shape {
+    min-width: 541.5px;
+  }
+
+  .sm\:max-w-hero {
+    max-width: 40%;
+  }
+
+  .sm\:transform-none {
+    transform: none;
   }
 
   .sm\:grid-cols-3 {
@@ -901,5 +1038,13 @@ h4 {
 
   .sm\:text-left {
     text-align: left;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 3.125rem;
   }
 }
