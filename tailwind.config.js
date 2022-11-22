@@ -57,13 +57,22 @@ module.exports = {
       },
       maxWidth: {
         max: "1080px",
+        "linked-buttons": "75%",
+        hero: "40%",
+        "header-text": "80%",
+      },
+      minHeight: {
+        hero: "775px",
+        "hero-text": "200px",
       },
       height: {
         hero: "775px",
         "hero-button": "35px",
       },
       width: {
+        hero: "775px",
         "hero-button": "35px",
+        "header-text": "50%",
       },
       margin: {
         "hero-button-arrow": "11px",
@@ -71,9 +80,6 @@ module.exports = {
       },
       lineHeight: {
         display: "64px",
-      },
-      spacing: {
-        "hero-shape": "250px",
       },
     },
   },
