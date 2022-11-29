@@ -280,61 +280,111 @@
         <div class="max-width-container">
           <h1 class="text-center text-white">Technical specifications</h1>
           <div class="sm:grid sm:grid-cols-3">
-            <p class="tech-spec text-white">
-              ONE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              TWO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              THREE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              FOUR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              FIVE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              SIX Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              SEVEN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              EIGHT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              NINE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              TEN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <div class="tech-spec text-white">
+              <img src="images/timeline-arrow.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Offers a complete training pipeline for three computer vision tasks
+              </p>
+              <p>
+                Including chip classification, object detection, and semantic segmentation.
+              </p>
+            </div>
+            <div class="tech-spec text-white">
+              <img src="images/circle-location-arrow.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Produces georeferenced outputs
+              </p>
+              <p>
+                Raster Vision produces predictions that are georeferenced and ready for downstream analysis.
+              </p>
+            </div>
+            <div class="tech-spec text-white">
+              <img src="images/draw-square.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Restrict training chips to an area or interest (AOI)
+              </p>
+              <p>
+                Fully annotating a large pixel scene is costly and time consuming. Raster Vision supports specifying an AOI in the form of one or more polygons.
+              </p>
+            </div>
+            <div class="tech-spec text-white">
+              <img src="images/hat-cowboy.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Facilitates data wrangling
+              </p>
+              <p>
+                Raster Vision can ingest both raster and vector data and convert them to a form suitable for training.
+              </p>
+            </div>
+            <div class="tech-spec text-white">
+              <img src="images/send-back.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Supports multiband imagery (eg. RGBIR images, Sentinel 2 imagery)
+              </p>
+              <p>
+                While retaining the existing pre-trained weights, Raster Vision modifies the first convolutional layer to accept additional (or fewer) channels.
+              </p>
+            </div>
+            <div class="tech-spec text-white">
+              <img src="images/aperture.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Offers data augmentation
+              </p>
+              <p>
+                Raster Vision supports customizable Albumentations transforms to use during training.
+              </p>
+            </div>
+            <div class="tech-spec text-white">
+              <img src="images/diagram-sankey.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Custom model specification
+              </p>
+              <p>
+                Utilize a wide variety of compatible models from local directories using TorchHub.
+              </p>
+            </div>
+            <div class="tech-spec text-white">
+              <img src="images/flame.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Based on PyTorch
+              </p>
+              <p>
+                Raster Vision implements deep learning functionality with PyTorch (a popular deep learning library) and Torchvision.
+              </p>
+            </div>
+            <div class="tech-spec text-white">
+              <img src="images/cloud-word.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Supports running pipelines in the cloud
+              </p>
+              <p>
+                Raster Vision provides support for running pipelines using AWS Batch.
+              </p>
+            </div>
+            <div class="tech-spec text-white">
+              <img src="images/table-cells-large.svg" class="h-7 w-7"/>
+              <p class="font-semibold text-med">
+                Supports configurable chip reading
+              </p>
+              <p>
+                Geospatial images tend to be too large to feed directly into a neural network and must first be broken up into smaller “chips”.
+              </p>
+            </div>
           </div>
           <div class="text-center">
             <h2 class="text-white">
               Built on popular technologies & open source libraries including
             </h2>
-            <p class="lg-body text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            <p class="large-body text-white">
+              AWS (S3 and Batch), PyTorch, TorchVision, Albumentations, Rasterio, Shapely, Gdal and Numpy.
             </p>
             <div
               class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-x-16 max-w-xl m-auto"
             >
-              <img src="images/placeholder.svg" />
-              <img src="images/placeholder.svg" />
-              <img src="images/placeholder.svg" />
-              <img src="images/placeholder.svg" />
+              <img src="images/logo-aws.svg" class="h-32 w-32"/>
+              <img src="images/logo-pytorch.svg" class="h-32 w-32"/>
+              <img src="images/logo-abulmentations.svg" class="h-32 w-32"/>
+              <img src="images/logo-numpy.svg" class="h-32 w-32"/>
             </div>
           </div>
         </div>
