@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,9 +50,7 @@
               <p
                 id="hero-text"
                 class="display mt-2 text-3xl leading-tight sm:text-4xl"
-              >
-                measuring traffic density_
-              </p>
+              ></p>
             </div>
             <div class="h-10"></div>
             <div class="flex gap-3 top-8 sm:top-32">
@@ -304,6 +303,12 @@
         </div>
       </div>
     </section>
+    <script>
+      typewriterEffect(
+        document.getElementById("hero-text"),
+        "measuring traffic density"
+      );
+    </script>
     <script>
       let interval = setInterval(changeHeroTextAndImage, 5000, true);
       $("#left-button").click(function () {
