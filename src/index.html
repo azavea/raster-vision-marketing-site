@@ -33,6 +33,27 @@
           </div>
       </div>
     </nav>
+    <nav id="desktopHeader" class="hidden top-0 bg-background-off-white h-16 z-50">
+      <div class="flex flex-row h-16 items-center px-8 justify-between">
+          <div class="basis-1/2">
+            <img
+              src="images/rv-logo.svg"
+              class="relative h-8"
+            />
+          </div>
+          <div class="flex flex-row items-center">
+            <div class="text-black text-opacity-60 font-semibold underline mr-6">
+              Github Discussions
+            </div>
+            <div class="text-black text-opacity-60 font-semibold underline mr-6">
+              Documentation
+            </div>
+            <div class="call-to-action-btn">
+              Get started
+            </div>
+          </div>
+      </div>
+    </nav>
     <section class="bg-background-off-white">
       <div class="flex flex-col sm:block">
         <div
@@ -114,7 +135,7 @@
       </div>
     </section>
     <section>
-      <div class="bg-gradient-to-r from-gradient-left to-gradient-right">
+      <div id="subHero" class="bg-gradient-to-r from-gradient-left to-gradient-right">
         <div class="max-width-container">
           <div class="mt-14 sm:flex sm:flex-row sm:mt-0 gap-10">
             <div class="basis-1/2 my-auto">
@@ -417,6 +438,26 @@
         changeHeroTextAndImage(true);
         interval = setInterval(changeHeroTextAndImage, 5000, true);
       });
+      //Add desktop header on scroll or resize of the page
+      window.onscroll = function() {evalHeaderOnChange(document)};
+      window.onresize = function() {evalHeaderOnChange(document)};
+      let showHeader = false;
+      function evalHeaderOnChange(doc) {
+        var desktopHeader = doc.getElementById("desktopHeader");
+        var subHero = doc.getElementById("subHero");
+        // 64 px corresponds to h-16
+        var sticky = showHeader ? subHero.offsetTop - 64 : subHero.offsetTop;
+        // 640 px corresponds to sm breakpoint
+        if (window.pageYOffset > sticky && window.innerWidth >= 640 ) {
+          desktopHeader.classList.remove("hidden");
+          desktopHeader.classList.add("sticky");
+          showHeader = true;
+        } else {
+          desktopHeader.classList.add("hidden");
+          desktopHeader.classList.remove("sticky");
+          showHeader = false;
+        }
+      }
     </script>
   </body>
 </html>
