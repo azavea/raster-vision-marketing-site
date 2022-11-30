@@ -1,36 +1,36 @@
 const heroTextAndImage = [
   {
-    text: "measuring traffic density_",
+    text: "measuring traffic density",
     src: "images/hero-trafficdensity.png",
     alt: "Traffic on a highway interchange",
   },
   {
-    text: "understanding crop health_",
+    text: "understanding crop health",
     src: "images/hero-crophealth2.png",
     alt: "Aerial view of fields of crops",
   },
   {
-    text: "tracking forest loss_",
+    text: "tracking forest loss",
     src: "images/hero-forestloss.png",
     alt: "Color-coded map reflecting forest loss",
   },
   {
-    text: "cell nuclei detection_",
+    text: "cell nuclei detection",
     src: "images/hero-nucleidetection.png",
     alt: "Close up of a cell nucleus",
   },
   {
-    text: "forecasting rip currents_",
+    text: "forecasting rip currents",
     src: "images/hero-ripcurrents.png",
     alt: "Aerial view of a hurricane",
   },
   {
-    text: "prediction of hourly global solar irradiation_",
+    text: "prediction of hourly global solar irradiation",
     src: "images/hero-solarirradiation.png",
     alt: "Satellite imagery of a solar farm",
   },
   {
-    text: "assessing storm damage_",
+    text: "assessing storm damage",
     src: "images/hero-stormdamage.png",
     alt: "A flooded suburban neighborhood",
   },
@@ -60,5 +60,16 @@ function changeHeroTextAndImage(moveForward) {
   currentImgElem.classList.remove("primary");
   // replace hero text to match new slide
   const textElem = document.getElementById("hero-text");
-  textElem.innerText = heroTextAndImage[nextIndex].text;
+  textElem.innerText = "";
+  typewriterEffect(textElem, heroTextAndImage[nextIndex].text);
+}
+
+function typewriterEffect(textElem, newText) {
+  new Typewriter(textElem, {
+    loop: false,
+    autoStart: true,
+    strings: newText,
+    delay: 75,
+    cursor: "_",
+  });
 }
