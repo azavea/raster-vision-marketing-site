@@ -277,98 +277,109 @@
     </section>
     <section>
       <div class="bg-background-blue">
+        <div class="max-width-container flex justify-center">
+          <div id="spec-button" class="sm:hidden text-white border-gray-button border-1 py-2 px-10 font-semibold">
+            See more specs
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="bg-background-blue">
         <div class="max-width-container">
-          <h1 class="text-center text-white">Technical specifications</h1>
-          <div class="sm:grid sm:grid-cols-3">
-            <div class="tech-spec text-white">
-              <img src="images/timeline-arrow.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Offers a complete training pipeline for three computer vision tasks
-              </p>
-              <p>
-                Including chip classification, object detection, and semantic segmentation.
-              </p>
-            </div>
-            <div class="tech-spec text-white">
-              <img src="images/circle-location-arrow.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Produces georeferenced outputs
-              </p>
-              <p>
-                Raster Vision produces predictions that are georeferenced and ready for downstream analysis.
-              </p>
-            </div>
-            <div class="tech-spec text-white">
-              <img src="images/draw-square.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Restrict training chips to an area or interest (AOI)
-              </p>
-              <p>
-                Fully annotating a large pixel scene is costly and time consuming. Raster Vision supports specifying an AOI in the form of one or more polygons.
-              </p>
-            </div>
-            <div class="tech-spec text-white">
-              <img src="images/hat-cowboy.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Facilitates data wrangling
-              </p>
-              <p>
-                Raster Vision can ingest both raster and vector data and convert them to a form suitable for training.
-              </p>
-            </div>
-            <div class="tech-spec text-white">
-              <img src="images/send-back.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Supports multiband imagery (eg. RGBIR images, Sentinel 2 imagery)
-              </p>
-              <p>
-                While retaining the existing pre-trained weights, Raster Vision modifies the first convolutional layer to accept additional (or fewer) channels.
-              </p>
-            </div>
-            <div class="tech-spec text-white">
-              <img src="images/aperture.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Offers data augmentation
-              </p>
-              <p>
-                Raster Vision supports customizable Albumentations transforms to use during training.
-              </p>
-            </div>
-            <div class="tech-spec text-white">
-              <img src="images/diagram-sankey.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Custom model specification
-              </p>
-              <p>
-                Utilize a wide variety of compatible models from local directories using TorchHub.
-              </p>
-            </div>
-            <div class="tech-spec text-white">
-              <img src="images/flame.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Based on PyTorch
-              </p>
-              <p>
-                Raster Vision implements deep learning functionality with PyTorch (a popular deep learning library) and Torchvision.
-              </p>
-            </div>
-            <div class="tech-spec text-white">
-              <img src="images/cloud-word.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Supports running pipelines in the cloud
-              </p>
-              <p>
-                Raster Vision provides support for running pipelines using AWS Batch.
-              </p>
-            </div>
-            <div class="tech-spec text-white">
-              <img src="images/table-cells-large.svg" class="h-7 w-7"/>
-              <p class="font-semibold text-med">
-                Supports configurable chip reading
-              </p>
-              <p>
-                Geospatial images tend to be too large to feed directly into a neural network and must first be broken up into smaller “chips”.
-              </p>
+          <div id="spec-section" class="hidden sm:block">
+            <h1 class="text-center text-white">Technical specifications</h1>
+            <div class="sm:grid sm:grid-cols-3">
+              <div class="tech-spec text-white">
+                <img src="images/timeline-arrow.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Offers a complete training pipeline for three computer vision tasks
+                </p>
+                <p>
+                  Including chip classification, object detection, and semantic segmentation.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/circle-location-arrow.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Produces georeferenced outputs
+                </p>
+                <p>
+                  Raster Vision produces predictions that are georeferenced and ready for downstream analysis.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/draw-square.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Restrict training chips to an area or interest (AOI)
+                </p>
+                <p>
+                  Fully annotating a large pixel scene is costly and time consuming. Raster Vision supports specifying an AOI in the form of one or more polygons.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/hat-cowboy.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Facilitates data wrangling
+                </p>
+                <p>
+                  Raster Vision can ingest both raster and vector data and convert them to a form suitable for training.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/send-back.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Supports multiband imagery (eg. RGBIR images, Sentinel 2 imagery)
+                </p>
+                <p>
+                  While retaining the existing pre-trained weights, Raster Vision modifies the first convolutional layer to accept additional (or fewer) channels.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/aperture.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Offers data augmentation
+                </p>
+                <p>
+                  Raster Vision supports customizable Albumentations transforms to use during training.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/diagram-sankey.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Custom model specification
+                </p>
+                <p>
+                  Utilize a wide variety of compatible models from local directories using TorchHub.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/flame.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Based on PyTorch
+                </p>
+                <p>
+                  Raster Vision implements deep learning functionality with PyTorch (a popular deep learning library) and Torchvision.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/cloud-word.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Supports running pipelines in the cloud
+                </p>
+                <p>
+                  Raster Vision provides support for running pipelines using AWS Batch.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/table-cells-large.svg" class="h-7 w-7"/>
+                <p class="font-semibold text-med">
+                  Supports configurable chip reading
+                </p>
+                <p>
+                  Geospatial images tend to be too large to feed directly into a neural network and must first be broken up into smaller “chips”.
+                </p>
+              </div>
             </div>
           </div>
           <div class="text-center">
@@ -644,6 +655,13 @@
       });
       $("#repeatable-config-2").click(function () {
         changeRepeatableConfigImage(this);
+      $("#spec-button").click(function () {
+        var specSection = document.getElementById("spec-section");
+        if (specSection.classList.contains("hidden")) {
+          specSection.classList.remove("hidden");
+        } else {
+          specSection.classList.add("hidden");
+        }
       });
     </script>
   </body>
