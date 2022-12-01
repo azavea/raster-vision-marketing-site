@@ -18,25 +18,27 @@
   </head>
 
   <body class="overflow-x-hidden">
-    <nav id="header" class="sticky sm:hidden top-0 bg-background-off-white h-16 z-50">
+    <nav
+      id="header"
+      class="sticky sm:hidden top-0 bg-background-off-white h-16 z-50"
+    >
       <div class="flex flex-row h-16 items-center px-8 justify-between">
-          <div class="basis-1/2">
-            <img
-              src="images/rv-logo.svg"
-              class="relative h-8"
-            />
+        <div class="basis-1/2">
+          <img src="images/rv-logo.svg" class="relative h-8" />
+        </div>
+        <div class="flex flex-row items-center">
+          <div
+            class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-6"
+          >
+            Github Discussions
           </div>
-          <div class="flex flex-row items-center">
-            <div class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-6">
-              Github Discussions
-            </div>
-            <div class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-6">
-              Documentation
-            </div>
-            <div class="call-to-action-btn">
-              Get started
-            </div>
+          <div
+            class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-6"
+          >
+            Documentation
           </div>
+          <div class="call-to-action-btn">Get started</div>
+        </div>
       </div>
     </nav>
     <section class="bg-background-off-white">
@@ -120,7 +122,10 @@
       </div>
     </section>
     <section>
-      <div id="subHero" class="bg-gradient-to-r from-gradient-left to-gradient-right">
+      <div
+        id="subHero"
+        class="bg-gradient-to-r from-gradient-left to-gradient-right"
+      >
         <div class="max-width-container">
           <div class="mt-14 sm:flex sm:flex-row sm:mt-0 gap-10">
             <div class="basis-1/2 my-auto">
@@ -393,9 +398,12 @@
       <div class="bg-footer-blue">
         <div class="max-width-container">
           <p class="xlarge-body text-white text-center">
-            An open-source computer vision and machine-learning framework developed by <span class="text-blue underline">Azavea</span>.
+            An open-source computer vision and machine-learning framework
+            developed by <span class="text-blue underline">Azavea</span>.
           </p>
-          <div class="flex flex-col-reverse sm:flex-row justify-center text-center xsmall-body text-white justify-end mt-16">
+          <div
+            class="flex flex-col-reverse sm:flex-row justify-center text-center xsmall-body text-white justify-end mt-16"
+          >
             <div>©2022 Azavea Inc. All rights reserved.</div>
             <div class="mb-2 sm:mb-0">
               <a href="#" class="underline sm:ml-4">Privacy Policy</a>
@@ -424,8 +432,12 @@
         interval = setInterval(changeHeroTextAndImage, 5000, true);
       });
       //Add desktop header on scroll or resize of the page
-      window.onscroll = function() {evalHeaderOnChange(document)};
-      window.onresize = function() {evalHeaderOnChange(document)};
+      window.onscroll = function () {
+        evalHeaderOnChange(document);
+      };
+      window.onresize = function () {
+        evalHeaderOnChange(document);
+      };
       let showHeader = false;
       function evalHeaderOnChange(doc) {
         var header = doc.getElementById("header");
