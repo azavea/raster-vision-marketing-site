@@ -18,6 +18,29 @@
   </head>
 
   <body class="overflow-x-hidden">
+    <nav
+      id="header"
+      class="sticky sm:hidden top-0 bg-background-off-white h-16 z-50"
+    >
+      <div class="flex flex-row h-16 items-center px-8 justify-between">
+        <div class="basis-1/2">
+          <img src="images/rv-logo.svg" class="relative h-8" />
+        </div>
+        <div class="flex flex-row items-center">
+          <div
+            class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-6"
+          >
+            Github Discussions
+          </div>
+          <div
+            class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-6"
+          >
+            Documentation
+          </div>
+          <div class="call-to-action-btn">Get started</div>
+        </div>
+      </div>
+    </nav>
     <section class="bg-background-off-white">
       <div class="flex flex-col sm:block">
         <div
@@ -45,7 +68,7 @@
               />
             </div>
             <div class="sm:h-40"></div>
-            <div class="max-w-header-text z-50 min-h-hero-text">
+            <div class="max-w-header-text z-40 min-h-hero-text">
               <h2 class="text-lg sm:text-2xl">An open-source ML library for</h2>
               <p
                 id="hero-text"
@@ -74,7 +97,7 @@
               </div>
             </div>
             <div class="h-20"></div>
-            <div class="top-16 flex flex-wrap sm:top-52 gap-x-3.5 z-50">
+            <div class="top-16 flex flex-wrap sm:top-52 gap-x-3.5 z-40">
               <a href="https://github.com/azavea/raster-vision">
                 <div class="hero-external-buttons group">
                   <h1 class="group-hover:text-teal">Get started</h1>
@@ -99,7 +122,10 @@
       </div>
     </section>
     <section>
-      <div class="bg-gradient-to-r from-gradient-left to-gradient-right">
+      <div
+        id="subHero"
+        class="bg-gradient-to-r from-gradient-left to-gradient-right"
+      >
         <div class="max-width-container">
           <div class="sm:flex sm:flex-row gap-10">
             <div class="basis-1/2 my-auto">
@@ -164,125 +190,64 @@
     </section>
     <section>
       <div class="bg-background-blue">
-        <div class="max-width-container flex justify-center">
-          <div id="spec-button" class="sm:hidden text-white border-gray-button border-1 py-2 px-10 font-semibold">
-            See more specs
-          </button>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="bg-background-blue">
         <div class="max-width-container">
-          <div id="spec-section" class="hidden sm:block">
-            <h1 class="text-center text-white">Technical specifications</h1>
-            <div class="sm:grid sm:grid-cols-2 md:grid-cols-3">
-              <div class="tech-spec text-white">
-                <img src="images/timeline-arrow.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Offers a complete training pipeline for three computer vision tasks
-                </p>
-                <p>
-                  Including chip classification, object detection, and semantic segmentation.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/circle-location-arrow.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Produces georeferenced outputs
-                </p>
-                <p>
-                  Raster Vision produces predictions that are georeferenced and ready for downstream analysis.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/draw-square.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Restrict training chips to an area or interest (AOI)
-                </p>
-                <p>
-                  Fully annotating a large pixel scene is costly and time consuming. Raster Vision supports specifying an AOI in the form of one or more polygons.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/hat-cowboy.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Facilitates data wrangling
-                </p>
-                <p>
-                  Raster Vision can ingest both raster and vector data and convert them to a form suitable for training.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/send-back.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Supports multiband imagery (eg. RGBIR images, Sentinel 2 imagery)
-                </p>
-                <p>
-                  While retaining the existing pre-trained weights, Raster Vision modifies the first convolutional layer to accept additional (or fewer) channels.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/aperture.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Offers data augmentation
-                </p>
-                <p>
-                  Raster Vision supports customizable Albumentations transforms to use during training.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/diagram-sankey.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Custom model specification
-                </p>
-                <p>
-                  Utilize a wide variety of compatible models from local directories using TorchHub.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/flame.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Based on PyTorch
-                </p>
-                <p>
-                  Raster Vision implements deep learning functionality with PyTorch (a popular deep learning library) and Torchvision.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/cloud-word.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Supports running pipelines in the cloud
-                </p>
-                <p>
-                  Raster Vision provides support for running pipelines using AWS Batch.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/table-cells-large.svg" class="h-7 w-7"/>
-                <p class="font-semibold text-med">
-                  Supports configurable chip reading
-                </p>
-                <p>
-                  Geospatial images tend to be too large to feed directly into a neural network and must first be broken up into smaller “chips”.
-                </p>
-              </div>
-            </div>
+          <h1 class="text-center text-white">Technical specifications</h1>
+          <div class="sm:grid sm:grid-cols-3">
+            <p class="tech-spec text-white">
+              ONE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              TWO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              THREE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              FOUR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              FIVE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              SIX Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              SEVEN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              EIGHT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              NINE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              TEN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
           <div class="text-center">
             <h2 class="text-white">
               Built on popular technologies & open source libraries including
             </h2>
-            <p class="large-body text-white">
-              AWS (S3 and Batch), PyTorch, TorchVision, Albumentations, Rasterio, Shapely, Gdal and Numpy.
+            <p class="lg-body text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
             </p>
             <div
               class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-x-16 max-w-xl m-auto"
             >
-              <img src="images/logo-aws.svg" class="h-32 w-32"/>
-              <img src="images/logo-pytorch.svg" class="h-32 w-32"/>
-              <img src="images/logo-abulmentations.svg" class="h-32 w-32"/>
-              <img src="images/logo-numpy.svg" class="h-32 w-32"/>
+              <img src="images/placeholder.svg" />
+              <img src="images/placeholder.svg" />
+              <img src="images/placeholder.svg" />
+              <img src="images/placeholder.svg" />
             </div>
           </div>
         </div>
@@ -358,9 +323,19 @@
     <section>
       <div class="bg-footer-blue">
         <div class="max-width-container">
-          <p class="medium-body text-white text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+          <p class="xlarge-body text-white text-center">
+            An open-source computer vision and machine-learning framework
+            developed by <span class="text-blue underline">Azavea</span>.
           </p>
+          <div
+            class="flex flex-col-reverse sm:flex-row justify-center text-center xsmall-body text-white justify-end mt-16"
+          >
+            <div>©2022 Azavea Inc. All rights reserved.</div>
+            <div class="mb-2 sm:mb-0">
+              <a href="#" class="underline sm:ml-4">Privacy Policy</a>
+              <a href="#" class="underline ml-4">Terms & Conditions</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -382,14 +357,27 @@
         changeHeroTextAndImage(true);
         interval = setInterval(changeHeroTextAndImage, 5000, true);
       });
-      $("#spec-button").click(function () {
-        var specSection = document.getElementById("spec-section");
-        if (specSection.classList.contains("hidden")) {
-          specSection.classList.remove("hidden");
+      //Add desktop header on scroll or resize of the page
+      window.onscroll = function () {
+        evalHeaderOnChange(document);
+      };
+      window.onresize = function () {
+        evalHeaderOnChange(document);
+      };
+      let showHeader = false;
+      function evalHeaderOnChange(doc) {
+        var header = doc.getElementById("header");
+        var subHero = doc.getElementById("subHero");
+        // 64 px corresponds to h-16, 640 px corresponds to sm breakpoint
+        var sticky = showHeader ? subHero.offsetTop - 64 : subHero.offsetTop;
+        if (window.pageYOffset > sticky && window.innerWidth >= 640) {
+          header.classList.remove("sm:hidden");
+          showHeader = true;
         } else {
-          specSection.classList.add("hidden");
+          header.classList.add("sm:hidden");
+          showHeader = false;
         }
-      });
+      }
     </script>
   </body>
 </html>
