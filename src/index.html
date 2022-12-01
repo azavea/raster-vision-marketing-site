@@ -18,22 +18,7 @@
   </head>
 
   <body class="overflow-x-hidden">
-    <nav class="sticky top-0 bg-background-off-white h-16 z-50 sm:hidden">
-      <div class="flex flex-row h-16 items-center px-8 justify-between">
-          <div class="basis-36">
-            <img
-              src="images/rv-logo.svg"
-              class="relative h-12"
-            />
-          </div>
-          <div>
-            <div class="call-to-action-btn">
-              Get started
-            </div>
-          </div>
-      </div>
-    </nav>
-    <nav id="desktopHeader" class="hidden top-0 bg-background-off-white h-16 z-50">
+    <nav id="header" class="sticky sm:hidden top-0 bg-background-off-white h-16 z-50">
       <div class="flex flex-row h-16 items-center px-8 justify-between">
           <div class="basis-1/2">
             <img
@@ -42,10 +27,10 @@
             />
           </div>
           <div class="flex flex-row items-center">
-            <div class="text-black text-opacity-60 font-semibold underline mr-6">
+            <div class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-6">
               Github Discussions
             </div>
-            <div class="text-black text-opacity-60 font-semibold underline mr-6">
+            <div class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-6">
               Documentation
             </div>
             <div class="call-to-action-btn">
@@ -443,18 +428,15 @@
       window.onresize = function() {evalHeaderOnChange(document)};
       let showHeader = false;
       function evalHeaderOnChange(doc) {
-        var desktopHeader = doc.getElementById("desktopHeader");
+        var header = doc.getElementById("header");
         var subHero = doc.getElementById("subHero");
-        // 64 px corresponds to h-16
+        // 64 px corresponds to h-16, 640 px corresponds to sm breakpoint
         var sticky = showHeader ? subHero.offsetTop - 64 : subHero.offsetTop;
-        // 640 px corresponds to sm breakpoint
-        if (window.pageYOffset > sticky && window.innerWidth >= 640 ) {
-          desktopHeader.classList.remove("hidden");
-          desktopHeader.classList.add("sticky");
+        if (window.pageYOffset > sticky && window.innerWidth >= 640) {
+          header.classList.remove("sm:hidden");
           showHeader = true;
         } else {
-          desktopHeader.classList.add("hidden");
-          desktopHeader.classList.remove("sticky");
+          header.classList.add("sm:hidden");
           showHeader = false;
         }
       }
