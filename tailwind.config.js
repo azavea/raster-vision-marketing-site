@@ -47,6 +47,7 @@ module.exports = {
       teal: "#169AA4",
       gray: "#4A5568",
       white: "#FFF",
+      lightGray: "#7F868F",
     },
     borderWidth: {
       1: "1px",
