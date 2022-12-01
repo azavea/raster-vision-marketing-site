@@ -733,8 +733,16 @@ h4 {
   margin-top: 0.5rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mb-16 {
@@ -944,6 +952,10 @@ h4 {
   font-size: 2rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+}
+
 .leading-tight {
   line-height: 1.25;
 }
@@ -965,6 +977,11 @@ h4 {
 
 .opacity-60 {
   opacity: 0.6;
+}
+
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 242 247 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:text-teal {
@@ -1001,6 +1018,10 @@ h4 {
   .sm\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
   }
 
   .sm\:block {
@@ -1096,6 +1117,10 @@ h4 {
 @media (min-width: 768px) {
   .md\:h-64 {
     height: 16rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 2rem;
   }
 }
 
