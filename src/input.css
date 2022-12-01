@@ -15,10 +15,6 @@
   @apply font-normal text-lg text-gray;
 }
 
-.xlarge-body {
-  @apply font-normal text-2xl text-gray;
-}
-
 .display {
   @apply font-normal text-4xl leading-display text-teal;
 }

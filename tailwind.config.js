@@ -26,6 +26,7 @@ module.exports = {
         400: "#38B2AC",
         900: "#1D4044",
         button: "#179BA5",
+        buttonHover: "#117279",
       },
       "gradient-left": "#031617",
       "gradient-right": "#2A3644",
