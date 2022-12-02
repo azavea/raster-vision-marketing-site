@@ -74,6 +74,10 @@ function typewriterEffect(textElem, newText) {
   });
 }
 
+// this boolean guards against a Firefox bug where adding the nav
+// element changes the YOffset of elements below, setting off a
+// race condition which will cause the nav to flash if the user
+// scrolls slowly near the breakpoint
 let showHeader = false;
 function evalHeaderOnChange() {
   const header = document.getElementById("header");
