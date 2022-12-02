@@ -446,25 +446,8 @@
       });
       //Add desktop header on scroll or resize of the page
       window.onscroll = function () {
-        evalHeaderOnChange(document);
+        evalHeaderOnChange();
       };
-      window.onresize = function () {
-        evalHeaderOnChange(document);
-      };
-      let showHeader = false;
-      function evalHeaderOnChange(doc) {
-        var header = doc.getElementById("header");
-        var subHero = doc.getElementById("subHero");
-        // 64 px corresponds to h-16, 640 px corresponds to sm breakpoint
-        var sticky = showHeader ? subHero.offsetTop - 64 : subHero.offsetTop;
-        if (window.pageYOffset > sticky && window.innerWidth >= 640) {
-          header.classList.remove("sm:hidden");
-          showHeader = true;
-        } else {
-          header.classList.add("sm:hidden");
-          showHeader = false;
-        }
-      }
     </script>
   </body>
 </html>

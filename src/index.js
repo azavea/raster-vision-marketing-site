@@ -73,3 +73,18 @@ function typewriterEffect(textElem, newText) {
     cursor: "_",
   });
 }
+
+let showHeader = false;
+function evalHeaderOnChange() {
+  const header = document.getElementById("header");
+  const subHero = document.getElementById("subHero");
+  // 64 px corresponds to h-16, 640 px corresponds to sm breakpoint
+  const subHeroOffset = showHeader ? subHero.offsetTop - 64 : subHero.offsetTop;
+  if (window.pageYOffset > subHeroOffset) {
+    header.classList.remove("sm:hidden");
+    showHeader = true;
+  } else {
+    header.classList.add("sm:hidden");
+    showHeader = false;
+  }
+}
