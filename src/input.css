@@ -70,6 +70,10 @@
   .rolodex-bars {
     @apply absolute bg-gradient-to-b from-white via-white opacity-80 h-24 z-30 w-80;
   }
+
+  .why-use-headline {
+    @apply text-med font-semibold text-black mt-3 mb-1;
+  }
 }
 
 @import "tailwindcss/components";
