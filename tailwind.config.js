@@ -92,7 +92,7 @@ module.exports = {
         },
       },
       animation: {
-        rolodex: "roll 16s cubic-bezier(.75,0,.25,1) infinite",
+        rolodex: "roll 15s cubic-bezier(.75,0,.25,1) infinite",
       },
     },
   },

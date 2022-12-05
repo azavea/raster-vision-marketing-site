@@ -27,10 +27,6 @@
   @apply bg-gradient-to-r from-gradient-left to-gradient-right;
 }
 
-.li::before {
-  @apply content-none;
-}
-
 @layer base {
   h1 {
     @apply font-normal text-3xl text-black;
@@ -69,6 +65,10 @@
 
   .hero-external-buttons {
     @apply bg-gray-100 p-3.5 w-80 rounded-xl cursor-pointer mb-3 sm:w-64;
+  }
+
+  .rolodex-bars {
+    @apply absolute bg-gradient-to-b from-white via-white opacity-80 h-24 z-30 w-80;
   }
 }
 
