@@ -48,7 +48,7 @@
   }
 
   .secondary-btn {
-    @apply rounded bg-white text-black border-gray-button border-1 p-2 hover:bg-gray-100;
+    @apply rounded bg-white text-black border-gray-button border-1 p-2;
   }
 
   .max-width-container {
@@ -65,10 +65,6 @@
 
   .hero-external-buttons {
     @apply bg-gray-100 p-3.5 w-80 rounded-xl cursor-pointer mb-3 sm:w-64;
-  }
-
-  .rolodex-bars {
-    @apply absolute bg-gradient-to-b from-white via-white opacity-80 h-24 z-30 w-80;
   }
 }
 

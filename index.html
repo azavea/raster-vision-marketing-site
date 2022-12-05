@@ -150,8 +150,8 @@
                     labeled.
                   </p>
                 </div>
-                <a href="https://groundwork.azavea.com/">
-                  <button class="secondary-btn">
+                <a href="https://github.com/azavea/raster-vision">
+                  <button class="secondary-btn hover:bg-gray-100">
                     Start training with GroundWork
                   </button>
                 </a>
@@ -174,7 +174,9 @@
                   </p>
                 </div>
                 <a href="https://docs.rastervision.io/">
-                  <button class="secondary-btn">Explore documentation</button>
+                  <button class="secondary-btn hover:bg-gray-100">
+                    Explore documentation
+                  </button>
                 </a>
               </div>
             </div>
@@ -202,36 +204,15 @@
     <section>
       <div class="bg-white">
         <div class="max-width-container">
-          <div
-            class="flex flex-col-reverse sm:flex-row justify-between my-4 sm:my-20 gap-6"
-          >
-            <div class="basis-2/5 text-center sm:text-left">
+          <div class="flex flex-col-reverse sm:flex-row sm:gap-20">
+            <div class="basis-1/2 text-center sm:text-left">
               <h1>Scaling <i>beyond</i> geospatial tech</h1>
-              <p class="large-body leading-8 my-7">
-                Raster Vision is versatile and can seamlessly handle the
-                idiosyncrasies of working with massive image datasets across a
-                broad range of industries.
+              <p class="medium-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <a href="https://groundwork.azavea.com/"
-                ><div class="secondary-btn w-64 text-center mx-auto sm:mx-0">
-                  Build your custom pipeline
-                </div></a
-              >
             </div>
-            <div class="display h-48 m-auto overflow-hidden lg:mr-28">
-              <!-- add bars to highlight only middle word in rolodex -->
-              <div class="rolodex-bars"></div>
-              <div class="rolodex-bars mt-24 rotate-180"></div>
-              <ul class="animate-rolodex text-center z-20">
-                <li>Forestry</li>
-                <li>Healthcare</li>
-                <li>Academia</li>
-                <li>Non-profit</li>
-                <li>Forestry</li>
-                <li>Healthcare</li>
-                <li>Academia</li>
-              </ul>
-            </div>
+            <img src="images/placeholder.svg" class="mx-auto sm:m-0 max-h-48" />
           </div>
         </div>
       </div>
@@ -239,63 +220,150 @@
     <section>
       <div class="bg-background-blue">
         <div class="max-width-container">
-          <h1 class="text-center text-white">Technical specifications</h1>
-          <div class="sm:grid sm:grid-cols-3">
-            <p class="tech-spec text-white">
-              ONE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              TWO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              THREE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              FOUR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              FIVE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              SIX Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              SEVEN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              EIGHT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              NINE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p class="tech-spec text-white">
-              TEN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+          <div class="flex justify-center py-4">
+            <button
+              id="spec-button"
+              class="sm:hidden text-white border-gray-button border-opacity-10 border-1 py-2 px-10 font-semibold"
+            >
+              See more specs
+            </button>
           </div>
-          <div class="text-center">
+          <div id="spec-section" class="hidden sm:block sm:mb-28">
+            <h1 class="text-center text-white">Technical specifications</h1>
+            <div class="sm:grid sm:grid-cols-2 md:grid-cols-3">
+              <div class="tech-spec text-white">
+                <img src="images/timeline-arrow.svg" class="h-7 w-7 pb-2" />
+                <p class="font-semibold text-med">
+                  Offers a complete training pipeline for three computer vision
+                  tasks
+                </p>
+                <p>
+                  Including chip classification, object detection, and semantic
+                  segmentation.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img
+                  src="images/circle-location-arrow.svg"
+                  class="h-7 w-7 pb-2"
+                />
+                <p class="font-semibold text-med">
+                  Produces georeferenced outputs
+                </p>
+                <p>
+                  Raster Vision produces predictions that are georeferenced and
+                  ready for downstream analysis.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/draw-square.svg" class="h-7 w-7 pb-2" />
+                <p class="font-semibold text-med">
+                  Restrict training chips to an area or interest (AOI)
+                </p>
+                <p>
+                  Fully annotating a large pixel scene is costly and time
+                  consuming. Raster Vision supports specifying an AOI in the
+                  form of one or more polygons.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/hat-cowboy.svg" class="h-7 w-7 pb-2" />
+                <p class="font-semibold text-med">Facilitates data wrangling</p>
+                <p>
+                  Raster Vision can ingest both raster and vector data and
+                  convert them to a form suitable for training.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/send-back.svg" class="h-7 w-7 pb-2" />
+                <p class="font-semibold text-med">
+                  Supports multiband imagery (eg. RGBIR images, Sentinel 2
+                  imagery)
+                </p>
+                <p>
+                  While retaining the existing pre-trained weights, Raster
+                  Vision modifies the first convolutional layer to accept
+                  additional (or fewer) channels.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/aperture.svg" class="h-7 w-7 pb-2" />
+                <p class="font-semibold text-med">Offers data augmentation</p>
+                <p>
+                  Raster Vision supports customizable Albumentations transforms
+                  to use during training.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/diagram-sankey.svg" class="h-7 w-7 pb-2" />
+                <p class="font-semibold text-med">Custom model specification</p>
+                <p>
+                  Utilize a wide variety of compatible models from local
+                  directories using TorchHub.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/flame.svg" class="h-7 w-7 pb-2" />
+                <p class="font-semibold text-med">Based on PyTorch</p>
+                <p>
+                  Raster Vision implements deep learning functionality with
+                  PyTorch (a popular deep learning library) and Torchvision.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/cloud-word.svg" class="h-7 w-7 pb-2" />
+                <p class="font-semibold text-med">
+                  Supports running pipelines in the cloud
+                </p>
+                <p>
+                  Raster Vision provides support for running pipelines using AWS
+                  Batch.
+                </p>
+              </div>
+              <div class="tech-spec text-white">
+                <img src="images/table-cells-large.svg" class="h-7 w-7 pb-2" />
+                <p class="font-semibold text-med">
+                  Supports configurable chip reading
+                </p>
+                <p>
+                  Geospatial images tend to be too large to feed directly into a
+                  neural network and must first be broken up into smaller
+                  “chips”.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mb-8">
             <h2 class="text-white">
               Built on popular technologies & open source libraries including
             </h2>
-            <p class="lg-body text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            <p class="large-body text-white pb-4">
+              AWS (S3 and Batch), PyTorch, TorchVision, Albumentations,
+              Rasterio, Shapely, Gdal and Numpy.
             </p>
             <div
-              class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-x-16 max-w-xl m-auto"
+              class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-x-16 max-w-xl m-auto place-items-center"
             >
-              <img src="images/placeholder.svg" />
-              <img src="images/placeholder.svg" />
-              <img src="images/placeholder.svg" />
-              <img src="images/placeholder.svg" />
+              <div class="h-32 w-32 flex justify-center items-center">
+                <a href="https://aws.amazon.com/">
+                  <img src="images/logo-aws.svg" />
+                </a>
+              </div>
+              <div class="h-32 w-32 flex justify-center items-center">
+                <a href="https://pytorch.org/">
+                  <img src="images/logo-pytorch.svg" />
+                </a>
+              </div>
+              <div class="h-32 w-32 flex justify-center items-center">
+                <a href="https://albumentations.ai/">
+                  <img src="images/logo-abulmentations.svg" />
+                </a>
+              </div>
+              <div class="h-32 w-32 flex justify-center items-center">
+                <a href="https://numpy.org/">
+                  <img src="images/logo-numpy.svg" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -394,6 +462,17 @@
         clearInterval(interval);
         changeHeroTextAndImage(true);
         interval = setInterval(changeHeroTextAndImage, 5000, true);
+      });
+      $("#spec-button").click(function () {
+        const specSection = document.getElementById("spec-section");
+        const specButton = document.getElementById("spec-button");
+        if (specSection.classList.contains("hidden")) {
+          specSection.classList.remove("hidden");
+          specButton.innerHTML = "See less specs";
+        } else {
+          specSection.classList.add("hidden");
+          specButton.innerHTML = "See more specs";
+        }
       });
     </script>
   </body>
