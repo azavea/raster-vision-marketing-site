@@ -44,7 +44,7 @@
 
 @layer components {
   .call-to-action-btn {
-    @apply rounded bg-teal-button text-white p-2;
+    @apply rounded bg-teal-button text-white p-2 hover:bg-teal-buttonHover;
   }
 
   .secondary-btn {
