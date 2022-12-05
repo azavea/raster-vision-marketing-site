@@ -4,6 +4,7 @@
     <title>Raster Vision</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="globals.js"></script>
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -18,6 +19,37 @@
   </head>
 
   <body class="overflow-x-hidden">
+    <nav
+      id="header"
+      class="sticky sm:hidden top-0 bg-background-off-white h-16 z-50"
+    >
+      <div
+        class="flex flex-row h-16 items-center px-8 sm:px-2 md:px-8 justify-between"
+      >
+        <div class="basis-1/2 sm:basis-1/3">
+          <img src="images/rv-logo.svg" class="relative h-8" />
+        </div>
+        <div class="flex flex-row items-center">
+          <a href="https://github.com/azavea/raster-vision/discussions">
+            <div
+              class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-1.5 md:mr-6"
+            >
+              Github Discussions
+            </div>
+          </a>
+          <a href="https://docs.rastervision.io/">
+            <div
+              class="hidden sm:flex text-black text-opacity-60 font-semibold underline mr-1.5 md:mr-6"
+            >
+              Documentation
+            </div>
+          </a>
+          <a href="https://github.com/azavea/raster-vision">
+            <button class="call-to-action-btn">Get started</button>
+          </a>
+        </div>
+      </div>
+    </nav>
     <section class="bg-background-off-white">
       <div class="flex flex-col sm:block">
         <div
@@ -45,7 +77,7 @@
               />
             </div>
             <div class="sm:h-40"></div>
-            <div class="max-w-header-text z-50 min-h-hero-text">
+            <div class="max-w-header-text z-40 min-h-hero-text">
               <h2 class="text-lg sm:text-2xl">An open-source ML library for</h2>
               <p
                 id="hero-text"
@@ -74,7 +106,7 @@
               </div>
             </div>
             <div class="h-20"></div>
-            <div class="top-16 flex flex-wrap sm:top-52 gap-x-3.5 z-50">
+            <div class="top-16 flex flex-wrap sm:top-52 gap-x-3.5 z-40">
               <a href="https://github.com/azavea/raster-vision">
                 <div class="hero-external-buttons group">
                   <h1 class="group-hover:text-teal">Get started</h1>
@@ -99,7 +131,10 @@
       </div>
     </section>
     <section>
-      <div class="bg-gradient-to-r from-gradient-left to-gradient-right">
+      <div
+        id="subHero"
+        class="bg-gradient-to-r from-gradient-left to-gradient-right"
+      >
         <div class="max-width-container">
           <div class="mt-14 sm:flex sm:flex-row sm:mt-0 gap-10">
             <div class="basis-1/2 my-auto">
@@ -239,150 +274,63 @@
     <section>
       <div class="bg-background-blue">
         <div class="max-width-container">
-          <div class="flex justify-center py-4">
-            <button
-              id="spec-button"
-              class="sm:hidden text-white border-gray-button border-opacity-10 border-1 py-2 px-10 font-semibold"
-            >
-              See more specs
-            </button>
+          <h1 class="text-center text-white">Technical specifications</h1>
+          <div class="sm:grid sm:grid-cols-3">
+            <p class="tech-spec text-white">
+              ONE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              TWO Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              THREE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              FOUR Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              FIVE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              SIX Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              SEVEN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              EIGHT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              NINE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="tech-spec text-white">
+              TEN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
-          <div id="spec-section" class="hidden sm:block sm:mb-28">
-            <h1 class="text-center text-white">Technical specifications</h1>
-            <div class="sm:grid sm:grid-cols-2 md:grid-cols-3">
-              <div class="tech-spec text-white">
-                <img src="images/timeline-arrow.svg" class="h-7 w-7 pb-2" />
-                <p class="font-semibold text-med">
-                  Offers a complete training pipeline for three computer vision
-                  tasks
-                </p>
-                <p>
-                  Including chip classification, object detection, and semantic
-                  segmentation.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img
-                  src="images/circle-location-arrow.svg"
-                  class="h-7 w-7 pb-2"
-                />
-                <p class="font-semibold text-med">
-                  Produces georeferenced outputs
-                </p>
-                <p>
-                  Raster Vision produces predictions that are georeferenced and
-                  ready for downstream analysis.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/draw-square.svg" class="h-7 w-7 pb-2" />
-                <p class="font-semibold text-med">
-                  Restrict training chips to an area or interest (AOI)
-                </p>
-                <p>
-                  Fully annotating a large pixel scene is costly and time
-                  consuming. Raster Vision supports specifying an AOI in the
-                  form of one or more polygons.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/hat-cowboy.svg" class="h-7 w-7 pb-2" />
-                <p class="font-semibold text-med">Facilitates data wrangling</p>
-                <p>
-                  Raster Vision can ingest both raster and vector data and
-                  convert them to a form suitable for training.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/send-back.svg" class="h-7 w-7 pb-2" />
-                <p class="font-semibold text-med">
-                  Supports multiband imagery (eg. RGBIR images, Sentinel 2
-                  imagery)
-                </p>
-                <p>
-                  While retaining the existing pre-trained weights, Raster
-                  Vision modifies the first convolutional layer to accept
-                  additional (or fewer) channels.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/aperture.svg" class="h-7 w-7 pb-2" />
-                <p class="font-semibold text-med">Offers data augmentation</p>
-                <p>
-                  Raster Vision supports customizable Albumentations transforms
-                  to use during training.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/diagram-sankey.svg" class="h-7 w-7 pb-2" />
-                <p class="font-semibold text-med">Custom model specification</p>
-                <p>
-                  Utilize a wide variety of compatible models from local
-                  directories using TorchHub.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/flame.svg" class="h-7 w-7 pb-2" />
-                <p class="font-semibold text-med">Based on PyTorch</p>
-                <p>
-                  Raster Vision implements deep learning functionality with
-                  PyTorch (a popular deep learning library) and Torchvision.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/cloud-word.svg" class="h-7 w-7 pb-2" />
-                <p class="font-semibold text-med">
-                  Supports running pipelines in the cloud
-                </p>
-                <p>
-                  Raster Vision provides support for running pipelines using AWS
-                  Batch.
-                </p>
-              </div>
-              <div class="tech-spec text-white">
-                <img src="images/table-cells-large.svg" class="h-7 w-7 pb-2" />
-                <p class="font-semibold text-med">
-                  Supports configurable chip reading
-                </p>
-                <p>
-                  Geospatial images tend to be too large to feed directly into a
-                  neural network and must first be broken up into smaller
-                  “chips”.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="text-center mb-8">
+          <div class="text-center">
             <h2 class="text-white">
               Built on popular technologies & open source libraries including
             </h2>
-            <p class="large-body text-white pb-4">
-              AWS (S3 and Batch), PyTorch, TorchVision, Albumentations,
-              Rasterio, Shapely, Gdal and Numpy.
+            <p class="lg-body text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
             </p>
             <div
-              class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-x-16 max-w-xl m-auto place-items-center"
+              class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-x-16 max-w-xl m-auto"
             >
-              <div class="h-28 w-32 flex justify-center items-center">
-                <a href="https://aws.amazon.com/">
-                  <img src="images/logo-aws.svg" />
-                </a>
-              </div>
-              <div class="h-28 w-32 flex justify-center items-center">
-                <a href="https://pytorch.org/">
-                  <img src="images/logo-pytorch.svg" />
-                </a>
-              </div>
-              <div class="h-28 w-32 flex justify-center items-center">
-                <a href="https://albumentations.ai/">
-                  <img src="images/logo-abulmentations.svg" />
-                </a>
-              </div>
-              <div class="h-28 w-32 flex justify-center items-center">
-                <a href="https://numpy.org/">
-                  <img src="images/logo-numpy.svg" />
-                </a>
-              </div>
+              <img src="images/placeholder.svg" />
+              <img src="images/placeholder.svg" />
+              <img src="images/placeholder.svg" />
+              <img src="images/placeholder.svg" />
             </div>
           </div>
         </div>
@@ -458,9 +406,25 @@
     <section>
       <div class="bg-footer-blue">
         <div class="max-width-container">
-          <p class="medium-body text-white text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-          </p>
+          <h2 class="text-white text-center mt-4 sm:mt-8">
+            An open-source computer vision and machine-learning framework
+            developed by
+            <a href="https://www.azavea.com/"
+              ><span class="text-blue underline">Azavea</span></a
+            >.
+          </h2>
+          <div
+            class="flex flex-col-reverse sm:flex-row justify-center text-center xsmall-body text-white mt-16"
+          >
+            <div>©2022 Azavea Inc. All rights reserved.</div>
+            <div class="mb-2 sm:mb-0">
+              <a
+                href="https://azavea.com/privacy-policy/"
+                class="underline sm:ml-4"
+                >Privacy Policy</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -482,17 +446,10 @@
         changeHeroTextAndImage(true);
         interval = setInterval(changeHeroTextAndImage, 5000, true);
       });
-      $("#spec-button").click(function () {
-        const specSection = document.getElementById("spec-section");
-        const specButton = document.getElementById("spec-button");
-        if (specSection.classList.contains("hidden")) {
-          specSection.classList.remove("hidden");
-          specButton.innerHTML = "See less specs";
-        } else {
-          specSection.classList.add("hidden");
-          specButton.innerHTML = "See more specs";
-        }
-      });
+      //Add desktop header on scroll
+      window.onscroll = function () {
+        evalHeaderOnChange();
+      };
     </script>
   </body>
 </html>
