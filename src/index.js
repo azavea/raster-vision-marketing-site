@@ -78,7 +78,6 @@ function typewriterEffect(textElem, newText) {
 // element changes the YOffset of elements below, setting off a
 // race condition which will cause the nav to flash if the user
 // scrolls slowly near the breakpoint
-let showHeader = false;
 function evalHeaderOnChange() {
   const header = document.getElementById("header");
   const subHero = document.getElementById("subHero");
