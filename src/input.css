@@ -48,7 +48,7 @@
   }
 
   .secondary-btn {
-    @apply rounded bg-white text-black border-gray-button border-1 p-2 hover:bg-gray-100;
+    @apply rounded bg-white text-black border-gray-button border-1 p-2 hover:bg-gray-100 font-semibold;
   }
 
   .max-width-container {
