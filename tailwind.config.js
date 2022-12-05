@@ -82,6 +82,18 @@ module.exports = {
       lineHeight: {
         display: "64px",
       },
+      keyframes: {
+        roll: {
+          "0%": { transform: "translateY(0)" },
+          "25%": { transform: "translateY(-64px)" },
+          "50%": { transform: "translateY(-128px)" },
+          "75%": { transform: "translateY(-192px)" },
+          "100%": { transform: "translateY(-256px)" },
+        },
+      },
+      animation: {
+        rolodex: "roll 16s cubic-bezier(.75,0,.25,1) infinite",
+      },
     },
   },
   plugins: [],

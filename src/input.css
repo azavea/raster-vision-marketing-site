@@ -27,6 +27,10 @@
   @apply bg-gradient-to-r from-gradient-left to-gradient-right;
 }
 
+.li::before {
+  @apply content-none;
+}
+
 @layer base {
   h1 {
     @apply font-normal text-3xl text-black;
@@ -48,7 +52,7 @@
   }
 
   .secondary-btn {
-    @apply rounded bg-white text-black border-gray-button border-1 p-2;
+    @apply rounded bg-white text-black border-gray-button border-1 p-2 hover:bg-gray-100;
   }
 
   .max-width-container {
