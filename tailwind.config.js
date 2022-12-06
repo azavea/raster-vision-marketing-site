@@ -31,6 +31,7 @@ module.exports = {
       "gradient-left": "#031617",
       "gradient-right": "#2A3644",
       "background-off-white": "#FDFDFD",
+      "repeatable-config-background": "#FBFBFB",
       "background-blue": "#2A3644",
       "footer-blue": "#1F2934",
     },
@@ -51,22 +52,29 @@ module.exports = {
       lightGray: "#7F868F",
       blue: "#A0DDE6",
     },
-    borderWidth: {
-      1: "1px",
-    },
     extend: {
       fontFamily: {
         poppins: ["Poppins", "ui-sans-serif"],
+      },
+      borderWidth: {
+        1: "1px",
       },
       maxWidth: {
         max: "1080px",
         "linked-buttons": "75%",
         hero: "40%",
         "header-text": "80%",
+        "repeatable-config-img": "655px",
+      },
+      maxHeight: {
+        "repeatable-config-img": "655px",
       },
       minHeight: {
         hero: "775px",
         "hero-text": "200px",
+      },
+      minWidth: {
+        "repeatable-config-text-narrow": "290px",
       },
       height: {
         hero: "775px",

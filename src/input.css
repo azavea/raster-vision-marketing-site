@@ -74,6 +74,22 @@
   .why-use-headline {
     @apply text-med font-semibold text-black mt-3 mb-1;
   }
+
+  .repeatable-config-selection {
+    @apply rounded-md bg-white text-black border-gray-button border-1 p-2 font-semibold h-10 hover:cursor-pointer text-med;
+  }
+
+  .repeatable-config-button-container {
+    @apply flex items-center justify-center float-right h-full w-5 my-auto;
+  }
+
+  .repeatable-config-outer-button {
+    @apply flex items-center justify-center rounded-full w-4 h-4 border-gray-button border-1;
+  }
+
+  .repeatable-config-inner-button {
+    @apply rounded-full w-2 h-2 bg-white;
+  }
 }
 
 @import "tailwindcss/components";
