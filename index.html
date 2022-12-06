@@ -435,21 +435,81 @@
     </section>
     <section>
       <div class="bg-white">
-        <div class="max-width-container">
-          <h2 class="text-center">
+        <div class="max-width-container sm:mt-10">
+          <h2 class="text-lg text-center mb-12 sm:mb-7 md:text-2xl">
             Easily use models in various deployment scenarios
           </h2>
-          <div class="sm:flex sm:flex-row sm:flex-wrap">
-            <div class="mr-14">
-              <h1>Quick & repeatable configurations</h1>
-              <p class="medium-body sm:basis-1/3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+          <div class="sm:flex sm:flex-row gap-x-4 lg:mx-12">
+            <div
+              class="mb-10 h-fit md:mb-0 rounded-lg sm:min-w-repeatable-config-text-narrow md:w-full bg-repeatable-config-background p-6 sm:p-2 md:p-6 basis-1/3"
+            >
+              <h1 class="text-2xl md:text-3xl">
+                Quick & repeatable configurations
+              </h1>
+              <h4 class="text-lightGray mt-6 mb-5">Select a scenario</h4>
+              <div class="flex flex-col gap-3">
+                <div
+                  id="repeatable-config-0"
+                  class="repeatable-config-selection selected border-2 border-teal-button"
+                >
+                  Semantic segmentation
+                  <div class="repeatable-config-button-container">
+                    <div class="repeatable-config-outer-button">
+                      <div
+                        id="repeatable-config-button-0"
+                        class="repeatable-config-inner-button bg-teal-button"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="repeatable-config-1"
+                  class="repeatable-config-selection"
+                >
+                  Chip classification
+                  <div class="repeatable-config-button-container">
+                    <div class="repeatable-config-outer-button">
+                      <div
+                        id="repeatable-config-button-1"
+                        class="repeatable-config-inner-button"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="repeatable-config-2"
+                  class="repeatable-config-selection"
+                >
+                  Object detection
+                  <div class="repeatable-config-button-container">
+                    <div class="repeatable-config-outer-button">
+                      <div
+                        id="repeatable-config-button-2"
+                        class="repeatable-config-inner-button"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="small-body text-lightGray mt-6">
+                Based on open-source data.
               </p>
             </div>
-            <img src="images/placeholder.svg" />
+            <div
+              class="flex mb-20 max-h-repeatable-config-img max-w-repeatable-config-img"
+            >
+              <img
+                id="legend"
+                class="absolute"
+                src="images/demo-segsem-legend.svg"
+              />
+              <img
+                class="rounded-lg object-cover"
+                id="repeatable-config-img"
+                alt="A satellite image of a suburban neighborhood with buildings highlighted"
+                src="images/demo-semseg.jpg"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -524,6 +584,17 @@
       window.onscroll = function () {
         evalHeaderOnChange();
       };
+    </script>
+    <script>
+      $("#repeatable-config-0").click(function () {
+        changeRepeatableConfigImage(this);
+      });
+      $("#repeatable-config-1").click(function () {
+        changeRepeatableConfigImage(this);
+      });
+      $("#repeatable-config-2").click(function () {
+        changeRepeatableConfigImage(this);
+      });
     </script>
   </body>
 </html>

@@ -36,6 +36,24 @@ const heroTextAndImage = [
   },
 ];
 
+const repeatableConfigImage = [
+  {
+    alt: "A satellite image of a suburban neighborhood with buildings highlighted",
+    src: "images/demo-semseg.jpg",
+    displayLegend: true,
+  },
+  {
+    alt: "A satellite image of a housing development next to a large field with a grid overlay",
+    src: "images/demo-chipclassification.jpg",
+    displayLegend: false,
+  },
+  {
+    alt: "A satellite image of buildings and cars with a square around every car",
+    src: "images/demo-objectdetection.jpg",
+    displayLegend: false,
+  },
+];
+
 function changeHeroTextAndImage(moveForward) {
   // find visible image id
   const currentImgElem = document.getElementsByClassName("primary")[0];
@@ -89,5 +107,34 @@ function evalHeaderOnChange() {
   } else {
     header.classList.add("sm:hidden");
     showHeader = false;
+  }
+}
+
+function changeRepeatableConfigImage(selection) {
+  // use selection to retrieve and set image from repeatableConfigImage
+  const newSelectionIndex = selection.id.split("-")[2];
+  const imgElem = document.getElementById("repeatable-config-img");
+  imgElem.src = repeatableConfigImage[newSelectionIndex].src;
+  imgElem.alt = repeatableConfigImage[newSelectionIndex].alt;
+  // remove styling from old selection
+  const oldSelection = document.getElementsByClassName("selected")[0];
+  const oldSelectionIndex = oldSelection.id.split("-")[2];
+  const oldSelectionButton = document.getElementById(
+    `repeatable-config-button-${oldSelectionIndex}`
+  );
+  oldSelection.classList.remove("selected", "border-2", "border-teal-button");
+  oldSelectionButton.classList.remove("bg-teal-button");
+  // set styling of new selection
+  const newSelectionButton = document.getElementById(
+    `repeatable-config-button-${newSelectionIndex}`
+  );
+  selection.classList.add("selected", "border-2", "border-teal-button");
+  newSelectionButton.classList.add("bg-teal-button");
+  // either remove or add semantic segmentation legend
+  const legendElem = document.getElementById("legend");
+  if (repeatableConfigImage[newSelectionIndex].displayLegend) {
+    legendElem.classList.remove("hidden");
+  } else if (repeatableConfigImage[oldSelectionIndex].displayLegend) {
+    legendElem.classList.add("hidden");
   }
 }
