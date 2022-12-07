@@ -59,6 +59,14 @@
     @apply xsmall-body m-5;
   }
 
+  .tech-spec-icon {
+    @apply h-7 w-7 pb-2;
+  }
+
+  .tech-spec-logo {
+    @apply h-28 w-32 flex justify-center items-center;
+  }
+
   .hero-image {
     @apply absolute bottom-0 -rotate-90 object-left object-cover sm:h-hero sm:transform-none;
   }
