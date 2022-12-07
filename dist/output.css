@@ -649,6 +649,20 @@ h4 {
   color: rgb(74 85 104 / var(--tw-text-opacity));
 }
 
+.tech-spec-icon {
+  height: 1.75rem;
+  width: 1.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.tech-spec-logo {
+  display: flex;
+  height: 7rem;
+  width: 8rem;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-image {
   position: absolute;
   bottom: 0px;
@@ -1005,6 +1019,10 @@ h4 {
   max-width: 36rem;
 }
 
+.max-w-xs {
+  max-width: 20rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1080,6 +1098,10 @@ h4 {
   flex-wrap: wrap;
 }
 
+.place-items-center {
+  place-items: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1102,10 +1124,6 @@ h4 {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-x-3\.5 {
@@ -1143,13 +1161,26 @@ h4 {
   border-radius: 0.5rem;
 }
 
+.border-1 {
+  border-width: 1px;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.border-gray-button {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));
 }
 
 .border-teal-button {
   --tw-border-opacity: 1;
   border-color: rgb(23 155 165 / var(--tw-border-opacity));
+}
+
+.border-opacity-10 {
+  --tw-border-opacity: 0.1;
 }
 
 .bg-background-off-white {
@@ -1220,6 +1251,21 @@ h4 {
   padding-bottom: 0px;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1227,6 +1273,10 @@ h4 {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -1247,6 +1297,10 @@ h4 {
 
 .text-2xl {
   font-size: 1.5rem;
+}
+
+.text-med {
+  font-size: 1rem;
 }
 
 .font-semibold {
@@ -1347,6 +1401,10 @@ h4 {
     margin-top: 0px;
   }
 
+  .sm\:mb-28 {
+    margin-bottom: 7rem;
+  }
+
   .sm\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -1419,12 +1477,16 @@ h4 {
     max-width: 40%;
   }
 
+  .sm\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .sm\:basis-1\/3 {
     flex-basis: 33.333333%;
   }
 
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-4 {
@@ -1477,6 +1539,10 @@ h4 {
 
   .md\:h-64 {
     height: 16rem;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4 {
