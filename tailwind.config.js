@@ -18,6 +18,7 @@ module.exports = {
         100: "#EDF2F7",
         900: "#171923",
         button: "#E2E8F0",
+        documentationButton: "#2A3644",
       },
       teal: {
         100: "#B2F5EA",

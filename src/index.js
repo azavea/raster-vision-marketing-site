@@ -41,16 +41,19 @@ const repeatableConfigImage = [
     alt: "A satellite image of a suburban neighborhood with buildings highlighted",
     src: "images/demo-semseg.jpg",
     displayLegend: true,
+    codeSnippet: "images/repconfig-ss-snippet.jpg",
   },
   {
     alt: "A satellite image of a housing development next to a large field with a grid overlay",
     src: "images/demo-chipclassification.jpg",
     displayLegend: false,
+    codeSnippet: "images/repconfig-cc-snippet.jpg",
   },
   {
     alt: "A satellite image of buildings and cars with a square around every car",
     src: "images/demo-objectdetection.jpg",
     displayLegend: false,
+    codeSnippet: "images/repconfig-od-snippet.jpg",
   },
 ];
 
@@ -116,6 +119,9 @@ function changeRepeatableConfigImage(selection) {
   const imgElem = document.getElementById("repeatable-config-img");
   imgElem.src = repeatableConfigImage[newSelectionIndex].src;
   imgElem.alt = repeatableConfigImage[newSelectionIndex].alt;
+  // replace code snippet image
+  const codeSnippetElem = document.getElementById("code-snippet");
+  codeSnippetElem.src = repeatableConfigImage[newSelectionIndex].codeSnippet;
   // remove styling from old selection
   const oldSelection = document.getElementsByClassName("selected")[0];
   const oldSelectionIndex = oldSelection.id.split("-")[2];
