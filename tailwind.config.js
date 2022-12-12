@@ -52,6 +52,7 @@ module.exports = {
       white: "#FFF",
       lightGray: "#7F868F",
       blue: "#A0DDE6",
+      contactUsGray: "#D9D9D9",
     },
     extend: {
       fontFamily: {
@@ -73,6 +74,7 @@ module.exports = {
       minHeight: {
         hero: "775px",
         "hero-text": "200px",
+        "contact-us-arrow": "12px",
       },
       minWidth: {
         "repeatable-config-text-narrow": "290px",
@@ -89,6 +91,9 @@ module.exports = {
       margin: {
         "hero-button-arrow": "11px",
         "hero-button": "430px",
+      },
+      padding: {
+        "lets-chat-graphic": "150px",
       },
       lineHeight: {
         display: "64px",
