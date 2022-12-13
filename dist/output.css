@@ -769,6 +769,42 @@ h4 {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.contact-us-option {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.contact-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact-us-arrow {
+  float: right;
+  min-height: 12px;
+  --tw-brightness: brightness(0);
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.contact-us-form-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+}
+
+.contact-us-input {
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+}
+
 .visible {
   visibility: visible;
 }
@@ -930,6 +966,10 @@ h4 {
   margin-top: 1rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -993,6 +1033,10 @@ h4 {
 
 .h-1\/2 {
   height: 50%;
+}
+
+.h-lets-chat-small {
+  height: 60px;
 }
 
 .max-h-6 {
@@ -1146,6 +1190,10 @@ h4 {
   gap: 1.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-x-3\.5 {
   -moz-column-gap: 0.875rem;
        column-gap: 0.875rem;
@@ -1163,6 +1211,10 @@ h4 {
 .gap-x-4 {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .overflow-hidden {
@@ -1271,6 +1323,11 @@ h4 {
      object-position: top;
 }
 
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -1300,17 +1357,20 @@ h4 {
   padding-right: 2.5rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -1378,6 +1438,11 @@ h4 {
   color: rgb(160 221 230 / var(--tw-text-opacity));
 }
 
+.text-contactUsGray {
+  --tw-text-opacity: 1;
+  color: rgb(217 217 217 / var(--tw-text-opacity));
+}
+
 .text-opacity-60 {
   --tw-text-opacity: 0.6;
 }
@@ -1388,6 +1453,18 @@ h4 {
 
 .opacity-60 {
   opacity: 0.6;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .hover\:underline:hover {
@@ -1499,6 +1576,10 @@ h4 {
     height: 25%;
   }
 
+  .sm\:h-lets-chat {
+    height: 150px;
+  }
+
   .sm\:min-h-hero {
     min-height: 775px;
   }
@@ -1539,8 +1620,8 @@ h4 {
     flex-direction: row;
   }
 
-  .sm\:flex-row-reverse {
-    flex-direction: row-reverse;
+  .sm\:justify-between {
+    justify-content: space-between;
   }
 
   .sm\:gap-x-16 {
@@ -1575,6 +1656,10 @@ h4 {
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
   }
 
   .sm\:text-left {
@@ -1615,6 +1700,10 @@ h4 {
     height: 2rem;
   }
 
+  .md\:max-w-contact-form {
+    max-width: 444px;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1627,6 +1716,14 @@ h4 {
     flex-direction: row;
   }
 
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:p-6 {
     padding: 1.5rem;
   }
@@ -1634,6 +1731,14 @@ h4 {
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:pt-28 {
+    padding-top: 7rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-3xl {

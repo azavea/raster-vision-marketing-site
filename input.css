@@ -98,6 +98,26 @@
   .repeatable-config-inner-button {
     @apply rounded-full w-2 h-2 bg-white;
   }
+
+  .contact-us-option {
+    @apply flex items-center justify-center mt-6 flex-row gap-x-20;
+  }
+
+  .contact-us-text {
+    @apply flex flex-col gap-1;
+  }
+
+  .contact-us-arrow {
+    @apply float-right brightness-0 invert min-h-contact-us-arrow;
+  }
+
+  .contact-us-form-section {
+    @apply flex flex-col gap-y-1;
+  }
+
+  .contact-us-input {
+    @apply h-10 rounded-md p-2;
+  }
 }
 
 @import "tailwindcss/components";
