@@ -688,11 +688,7 @@
               </a>
             </div>
             <div class="basis-1/2 pr-28">
-              <form
-                class="medium-body"
-                action="https://forms.hubspot.com/uploads/form/v2/6397011/dcddb8bb-d2fc-4c29-bfd1-590859eb48af"
-                method="POST"
-              >
+              <form class="medium-body" id="contact-form">
                 <div class="flex flex-col gap-y-4">
                   <div class="flex flex-row justify-between">
                     <div class="contact-us-form-section">
@@ -704,6 +700,7 @@
                         id="first_name"
                         name="first_name"
                         class="contact-us-input w-52"
+                        required="required"
                       />
                     </div>
                     <div class="contact-us-form-section">
@@ -715,6 +712,7 @@
                         id="last_name"
                         name="last_name"
                         class="contact-us-input w-52"
+                        required="required"
                       />
                     </div>
                   </div>
@@ -753,6 +751,7 @@
                       id="email"
                       name="email"
                       class="contact-us-input"
+                      required="required"
                     />
                   </div>
                   <div class="contact-us-form-section">
@@ -768,11 +767,22 @@
                     />
                   </div>
                 </div>
-                <input type="submit" value="Send"
-                class="call-to-action-btn w-full text-center hover:cursor-pointer mt-4"
-              >
-              </input>
+                <input
+                  type="submit"
+                  value="Send"
+                  class="call-to-action-btn w-full text-center hover:cursor-pointer mt-4"
+                />
               </form>
+              <div
+                id="form-error-msg"
+                class="text-white text-med mt-2 text-center"
+              ></div>
+              <div id="success-msg" class="hidden">
+                <h1 class="text-white">Message sent!</h1>
+                <p class="large-body text-white">
+                  Someone will get back to you shortly.
+                </p>
+              </div>
             </div>
           </div>
           <img src="images/letschat.svg" class="object-bottom mx-auto" />
@@ -804,6 +814,7 @@
         </div>
       </div>
     </section>
+
     <script>
       typewriterEffect(
         document.getElementById("hero-text"),
@@ -847,6 +858,12 @@
           specSection.classList.add("hidden");
           specButton.innerHTML = "See more specs";
         }
+      });
+    </script>
+    <script>
+      $("form").submit(function (event) {
+        event.preventDefault();
+        submitContactForm();
       });
     </script>
   </body>
