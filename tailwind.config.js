@@ -52,6 +52,7 @@ module.exports = {
       white: "#FFF",
       lightGray: "#7F868F",
       blue: "#A0DDE6",
+      contactUsGray: "#D9D9D9",
     },
     extend: {
       fontFamily: {
@@ -66,6 +67,7 @@ module.exports = {
         hero: "40%",
         "header-text": "80%",
         "repeatable-config-img": "655px",
+        "contact-form": "444px",
       },
       maxHeight: {
         "repeatable-config-img": "655px",
@@ -73,6 +75,7 @@ module.exports = {
       minHeight: {
         hero: "775px",
         "hero-text": "200px",
+        "contact-us-arrow": "12px",
       },
       minWidth: {
         "repeatable-config-text-narrow": "290px",
@@ -80,6 +83,8 @@ module.exports = {
       height: {
         hero: "775px",
         "hero-button": "35px",
+        "lets-chat": "150px",
+        "lets-chat-small": "60px",
       },
       width: {
         hero: "775px",
@@ -89,6 +94,9 @@ module.exports = {
       margin: {
         "hero-button-arrow": "11px",
         "hero-button": "430px",
+      },
+      padding: {
+        "lets-chat-graphic": "150px",
       },
       lineHeight: {
         display: "64px",
