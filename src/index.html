@@ -633,8 +633,8 @@
     </section>
     <section>
       <div class="bg-background-blue">
-        <div class="max-width-container pt-28 pb-0">
-          <div class="sm:flex sm:flex-row-reverse">
+        <div class="max-width-container pt-10 md:pt-28 pb-0">
+          <div class="md:flex md:flex-row-reverse md:justify-between gap-4">
             <div class="basis-1/2">
               <h1 class="text-white">How can we help?</h1>
               <p class="large-body text-white">
@@ -687,11 +687,16 @@
                 </div>
               </a>
             </div>
-            <div class="basis-1/2 pr-28">
-              <form class="medium-body" id="contact-form">
+            <div
+              class="basis-1/2 flex pt-10 md:pt-0 justify-center align-middle"
+            >
+              <form
+                class="medium-body w-full md:max-w-contact-form"
+                id="contact-form"
+              >
                 <div class="flex flex-col gap-y-4">
-                  <div class="flex flex-row justify-between">
-                    <div class="contact-us-form-section">
+                  <div class="sm:flex sm:flex-row sm:justify-between gap-4">
+                    <div class="contact-us-form-section w-full">
                       <label for="first_name" class="text-white"
                         >First name*</label
                       >
@@ -699,11 +704,11 @@
                         type="text"
                         id="first_name"
                         name="first_name"
-                        class="contact-us-input w-52"
+                        class="contact-us-input"
                         required="required"
                       />
                     </div>
-                    <div class="contact-us-form-section">
+                    <div class="contact-us-form-section w-full pt-4 sm:pt-0">
                       <label for="last_name" class="text-white"
                         >Last name*</label
                       >
@@ -711,7 +716,7 @@
                         type="text"
                         id="last_name"
                         name="last_name"
-                        class="contact-us-input w-52"
+                        class="contact-us-input"
                         required="required"
                       />
                     </div>
@@ -778,14 +783,20 @@
                 class="text-white text-med mt-2 text-center"
               ></div>
               <div id="success-msg" class="hidden">
-                <h1 class="text-white">Message sent!</h1>
-                <p class="large-body text-white">
+                <h1 class="text-white text-center md:text-left">
+                  Message sent!
+                </h1>
+                <p class="large-body text-white text-center md:text-left">
                   Someone will get back to you shortly.
                 </p>
               </div>
             </div>
           </div>
-          <img src="images/letschat.svg" class="object-bottom mx-auto" />
+          <div
+            class="relative flex object-bottom h-lets-chat-small sm:h-lets-chat mt-20 sm:mt-0 justify-center"
+          >
+            <img src="images/letschat.svg" class="absolute bottom-0" />
+          </div>
         </div>
       </div>
     </section>

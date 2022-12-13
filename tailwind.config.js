@@ -67,6 +67,7 @@ module.exports = {
         hero: "40%",
         "header-text": "80%",
         "repeatable-config-img": "655px",
+        "contact-form": "444px",
       },
       maxHeight: {
         "repeatable-config-img": "655px",
@@ -82,6 +83,8 @@ module.exports = {
       height: {
         hero: "775px",
         "hero-button": "35px",
+        "lets-chat": "150px",
+        "lets-chat-small": "60px",
       },
       width: {
         hero: "775px",
