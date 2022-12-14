@@ -12,29 +12,32 @@ module.exports = {
     },
     colors: {
       black: "#000",
-      white: "#FFF",
+      white: {
+        0: "#FFF",
+        50: "#FDFDFD",
+        100: "#FBFBFB",
+      },
       gray: {
         50: "#F6F6F6",
         100: "#EDF2F7",
+        300: "#E2E8F0",
+        800: "#2A3644",
         900: "#171923",
-        button: "#E2E8F0",
-        documentationButton: "#2A3644",
       },
       teal: {
         100: "#B2F5EA",
         200: "#81E6D9",
         300: "#4FD1C5",
         400: "#38B2AC",
+        500: "#179BA5",
+        600: "#117279",
         900: "#1D4044",
-        button: "#179BA5",
-        buttonHover: "#117279",
       },
-      "gradient-left": "#031617",
-      "gradient-right": "#2A3644",
-      "background-off-white": "#FDFDFD",
-      "repeatable-config-background": "#FBFBFB",
-      "background-blue": "#2A3644",
-      "footer-blue": "#1F2934",
+      blue: {
+        700: "#2A3644",
+        800: "#031617",
+        900: "#1F2934",
+      },
     },
     fontSize: {
       xs: "0.75rem",
@@ -48,11 +51,13 @@ module.exports = {
     textColor: {
       black: "#2A3644",
       teal: "#169AA4",
-      gray: "#4A5568",
+      gray: {
+        200: "#D9D9D9",
+        700: "#7F868F",
+        800: "#4A5568",
+      },
       white: "#FFF",
-      lightGray: "#7F868F",
       blue: "#A0DDE6",
-      contactUsGray: "#D9D9D9",
     },
     extend: {
       fontFamily: {

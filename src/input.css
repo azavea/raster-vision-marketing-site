@@ -1,18 +1,18 @@
 @import "tailwindcss/base";
 .xsmall-body {
-  @apply font-normal text-xs text-gray;
+  @apply font-normal text-xs text-gray-800;
 }
 
 .small-body {
-  @apply font-normal text-sm text-gray;
+  @apply font-normal text-sm text-gray-800;
 }
 
 .medium-body {
-  @apply font-normal text-med text-gray;
+  @apply font-normal text-med text-gray-800;
 }
 
 .large-body {
-  @apply font-normal text-lg text-gray;
+  @apply font-normal text-lg text-gray-800;
 }
 
 .display {
@@ -21,10 +21,6 @@
 
 .h3-blue {
   @apply font-semibold text-lg text-teal;
-}
-
-.gradient {
-  @apply bg-gradient-to-r from-gradient-left to-gradient-right;
 }
 
 @layer base {
@@ -38,17 +34,17 @@
     @apply font-semibold text-lg text-black;
   }
   h4 {
-    @apply font-semibold text-med text-gray uppercase;
+    @apply font-semibold text-med uppercase text-gray-700;
   }
 }
 
 @layer components {
   .call-to-action-btn {
-    @apply rounded bg-teal-button text-white p-2 hover:bg-teal-buttonHover;
+    @apply rounded bg-teal-500 text-white p-2 hover:bg-teal-600;
   }
 
   .secondary-btn {
-    @apply rounded bg-white text-black border-gray-button border-1 p-2 hover:bg-gray-100 font-semibold;
+    @apply rounded bg-white-0 text-black border-gray-300 border-1 p-2 hover:bg-gray-100 font-semibold;
   }
 
   .max-width-container {
@@ -76,7 +72,7 @@
   }
 
   .rolodex-bars {
-    @apply absolute bg-gradient-to-b from-white via-white opacity-80 h-24 z-30 w-80;
+    @apply absolute bg-gradient-to-b from-white-0 via-white-0 opacity-80 h-24 z-30 w-80;
   }
 
   .why-use-headline {
@@ -84,7 +80,7 @@
   }
 
   .repeatable-config-selection {
-    @apply rounded-md bg-white text-black border-gray-button border-1 p-2 font-semibold h-10 hover:cursor-pointer text-med;
+    @apply rounded-md bg-white-0 text-black border-gray-300 border-1 p-2 font-semibold h-10 hover:cursor-pointer text-med;
   }
 
   .repeatable-config-button-container {
@@ -92,11 +88,11 @@
   }
 
   .repeatable-config-outer-button {
-    @apply flex items-center justify-center rounded-full w-4 h-4 border-gray-button border-1;
+    @apply flex items-center justify-center rounded-full w-4 h-4 border-gray-300 border-1;
   }
 
   .repeatable-config-inner-button {
-    @apply rounded-full w-2 h-2 bg-white;
+    @apply rounded-full w-2 h-2 bg-white-0;
   }
 
   .contact-us-option {
