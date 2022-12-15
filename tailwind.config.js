@@ -73,6 +73,7 @@ module.exports = {
         "header-text": "80%",
         "repeatable-config-img": "655px",
         "contact-form": "444px",
+        rolodex: "465px",
       },
       maxHeight: {
         "repeatable-config-img": "655px",
@@ -109,14 +110,20 @@ module.exports = {
       keyframes: {
         roll: {
           "0%": { transform: "translateY(0)" },
-          "25%": { transform: "translateY(-64px)" },
-          "50%": { transform: "translateY(-128px)" },
-          "75%": { transform: "translateY(-192px)" },
-          "100%": { transform: "translateY(-256px)" },
+          "10%": { transform: "translateY(-64px)" },
+          "20%": { transform: "translateY(-128px)" },
+          "30%": { transform: "translateY(-192px)" },
+          "40%": { transform: "translateY(-256px)" },
+          "50%": { transform: "translateY(-320px)" },
+          "60%": { transform: "translateY(-384px)" },
+          "70%": { transform: "translateY(-448px)" },
+          "80%": { transform: "translateY(-512px)" },
+          "90%": { transform: "translateY(-576px)" },
+          "100%": { transform: "translateY(-640px)" },
         },
       },
       animation: {
-        rolodex: "roll 15s cubic-bezier(.75,0,.25,1) infinite",
+        rolodex: "roll 30s cubic-bezier(.75,0,.25,1) infinite",
       },
     },
   },

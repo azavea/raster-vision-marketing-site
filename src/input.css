@@ -72,7 +72,7 @@
   }
 
   .rolodex-bars {
-    @apply absolute bg-gradient-to-b from-white-50 via-white-50 opacity-80 h-24 z-30 w-80;
+    @apply absolute bg-gradient-to-b from-white-50 via-white-50 opacity-80 h-24 z-30 max-w-rolodex w-full md:w-1/2;
   }
 
   .why-use-headline {
