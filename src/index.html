@@ -786,24 +786,25 @@
                       >What would you like to accomplish with Raster
                       Vision?</label
                     >
-                    <input
+                    <textarea
                       type="text"
                       id="message"
                       name="message"
                       class="contact-us-input h-20"
-                    />
+                    ></textarea>
                   </div>
                 </div>
-                <input
+                <button
                   type="submit"
-                  value="Send"
                   class="call-to-action-btn w-full text-center mt-4"
-                />
+                >
+                  Send
+                </button>
+                <div
+                  id="form-error-msg"
+                  class="text-white text-med mt-2 text-center"
+                ></div>
               </form>
-              <div
-                id="form-error-msg"
-                class="text-white text-med mt-2 text-center"
-              ></div>
               <div id="success-msg" class="hidden">
                 <h1 class="text-white text-center md:text-left">
                   Message sent!

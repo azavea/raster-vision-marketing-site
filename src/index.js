@@ -146,12 +146,14 @@ function changeRepeatableConfigImage(selection) {
 }
 
 function submitContactForm() {
+  // just in case the post request failed previously
+  document.getElementById("form-error-msg").innerText = "";
   $.post(
     "https://forms.hubspot.com/uploads/form/v2/6397011/dcddb8bb-d2fc-4c29-bfd1-590859eb48af",
     {
       first_name: $("#first_name").val(),
       last_name: $("#last_name").val(),
-      industry: $("#industry").val(),
+      industry_type: $("#industry").val(),
       email: $("#email").val(),
       message: $("#message").val(),
     }
