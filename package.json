@@ -14,13 +14,9 @@
   },
   "scripts": {
     "start": "python3 -m http.server --directory src",
-    "compile-css": "npx tailwindcss -i ./src/input.css -o ./src/dist/output.css --watch"
+    "compile-css": "npx tailwindcss -i ./src/input.css -o ./src/dist/output.css --watch --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.2"
-  },
-  "dependencies": {
-    "jquery": "^3.6.1",
-    "typewriter-effect": "^2.19.0"
   }
 }
