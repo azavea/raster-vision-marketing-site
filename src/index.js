@@ -128,14 +128,14 @@ function changeRepeatableConfigImage(selection) {
   const oldSelectionButton = document.getElementById(
     `repeatable-config-button-${oldSelectionIndex}`
   );
-  oldSelection.classList.remove("selected", "border-2", "border-teal-button");
-  oldSelectionButton.classList.remove("bg-teal-button");
+  oldSelection.classList.remove("selected", "border-2", "border-teal-500");
+  oldSelectionButton.classList.remove("bg-teal-500");
   // set styling of new selection
   const newSelectionButton = document.getElementById(
     `repeatable-config-button-${newSelectionIndex}`
   );
-  selection.classList.add("selected", "border-2", "border-teal-button");
-  newSelectionButton.classList.add("bg-teal-button");
+  selection.classList.add("selected", "border-2", "border-teal-500");
+  newSelectionButton.classList.add("bg-teal-500");
   // either remove or add semantic segmentation legend
   const legendElem = document.getElementById("legend");
   if (repeatableConfigImage[newSelectionIndex].displayLegend) {
@@ -146,12 +146,14 @@ function changeRepeatableConfigImage(selection) {
 }
 
 function submitContactForm() {
+  // just in case the post request failed previously
+  document.getElementById("form-error-msg").innerText = "";
   $.post(
     "https://forms.hubspot.com/uploads/form/v2/6397011/dcddb8bb-d2fc-4c29-bfd1-590859eb48af",
     {
       first_name: $("#first_name").val(),
       last_name: $("#last_name").val(),
-      industry: $("#industry").val(),
+      industry_type: $("#industry").val(),
       email: $("#email").val(),
       message: $("#message").val(),
     }
