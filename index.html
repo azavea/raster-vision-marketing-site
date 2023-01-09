@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="font-poppins">
   <head>
-    <title>Raster Vision</title>
+    <title>
+      Raster Vision: An open-source machine learning library for deep learning
+      on satellite and aerial imagery
+    </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      context="Raster Vision is an open-source machine learning library for deep learning on satellite and aerial imagery"
+      content="Raster Vision is an open-source machine learning library for deep learning on satellite and aerial imagery"
     />
     <script src="globals.js"></script>
     <script src="index.js"></script>
@@ -109,21 +112,21 @@
             <div class="flex gap-3 top-8 sm:top-32">
               <div
                 id="left-button"
-                alt="Navigate to next use case"
                 class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
               >
                 <img
                   src="images/icon-chevron-left.svg"
+                  alt="Navigate to next use case"
                   class="mx-auto my-hero-button-arrow"
                 />
               </div>
               <div
                 id="right-button"
-                alt="Navigate to previous use case"
                 class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
               >
                 <img
                   src="images/icon-chevron-right.svg"
+                  alt="Navigate to previous use case"
                   class="mx-auto my-hero-button-arrow"
                 />
               </div>
@@ -641,11 +644,11 @@
               </h1>
               <h4 class="mt-6 mb-5">Select a scenario</h4>
               <div class="flex flex-col gap-3">
-                <button
+                <div
                   id="repeatable-config-0"
                   class="repeatable-config-selection selected border-2 border-teal-500"
                 >
-                  Semantic segmentation
+                  <button>Semantic segmentation</button>
                   <div class="repeatable-config-button-container">
                     <div class="repeatable-config-outer-button">
                       <div
@@ -654,12 +657,12 @@
                       ></div>
                     </div>
                   </div>
-                </button>
-                <button
+                </div>
+                <div
                   id="repeatable-config-1"
                   class="repeatable-config-selection"
                 >
-                  Chip classification
+                  <button>Chip classification</button>
                   <div class="repeatable-config-button-container">
                     <div class="repeatable-config-outer-button">
                       <div
@@ -668,12 +671,12 @@
                       ></div>
                     </div>
                   </div>
-                </button>
-                <button
+                </div>
+                <div
                   id="repeatable-config-2"
                   class="repeatable-config-selection"
                 >
-                  Object detection
+                  <button>Object detection</button>
                   <div class="repeatable-config-button-container">
                     <div class="repeatable-config-outer-button">
                       <div
@@ -682,7 +685,7 @@
                       ></div>
                     </div>
                   </div>
-                </button>
+                </div>
               </div>
               <p class="small-body text-gray-700 mt-6">
                 Based on open-source data.

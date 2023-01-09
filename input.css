@@ -80,7 +80,7 @@
   }
 
   .repeatable-config-selection {
-    @apply rounded-md bg-white-0 text-black border-gray-300 border-1 p-2 font-semibold h-10 text-med text-left;
+    @apply rounded-md bg-white-0 text-black border-gray-300 border-1 p-2 font-semibold h-10 text-med text-left hover:cursor-pointer;
   }
 
   .repeatable-config-button-container {
