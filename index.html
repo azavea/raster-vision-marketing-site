@@ -4,6 +4,10 @@
     <title>Raster Vision</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      context="Raster Vision is an open-source machine learning library for deep learning on satellite and aerial imagery"
+    />
     <script src="globals.js"></script>
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -31,7 +35,11 @@
         class="flex flex-row max-width-container h-16 sm:h-24 items-center px-4 sm:px-2 md:px-8 lg:px-0 justify-between"
       >
         <div class="basis-1/2 sm:basis-1/3">
-          <img src="images/rv-logo.svg" class="relative h-6" />
+          <img
+            src="images/rv-logo.svg"
+            alt="Raster Vision logo"
+            class="relative h-6"
+          />
         </div>
         <div class="flex flex-row items-center">
           <a href="https://github.com/azavea/raster-vision/discussions">
@@ -49,7 +57,7 @@
             </div>
           </a>
           <a href="https://github.com/azavea/raster-vision">
-            <button class="call-to-action-btn">
+            <div class="call-to-action-btn">
               <div
                 class="w-24 md:w-32 h-6 sm:h-8 flex justify-center align-middle"
               >
@@ -57,7 +65,7 @@
                   Get started
                 </div>
               </div>
-            </button>
+            </div>
           </a>
         </div>
       </div>
@@ -85,6 +93,7 @@
             <div>
               <img
                 src="images/rv-logo.svg"
+                alt="Raster Vision logo"
                 class="relative top-14 hidden sm:block max-h-6"
               />
             </div>
@@ -100,6 +109,7 @@
             <div class="flex gap-3 top-8 sm:top-32">
               <div
                 id="left-button"
+                alt="Navigate to next use case"
                 class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
               >
                 <img
@@ -109,6 +119,7 @@
               </div>
               <div
                 id="right-button"
+                alt="Navigate to previous use case"
                 class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
               >
                 <img
@@ -165,6 +176,7 @@
             <div class="basis-1/2 max-w-xl my-auto">
               <img
                 src="images/img-rv-computervision-tasks.png"
+                alt="Diagram illustrating the different applications of Raster Vision"
                 class="m-auto sm:m-0 pt-10"
               />
             </div>
@@ -185,7 +197,11 @@
           <div class="sm:flex sm:flex-row gap-10 my-5">
             <div class="sm:w-1/3 mb-16">
               <div class="sm:h-64 flex items-center justify-center">
-                <img src="images/rv_anim_ss_input.gif" class="m-auto sm:m-0" />
+                <img
+                  src="images/rv_anim_ss_input.gif"
+                  alt="Demonstration of how Raster Vision moves through images chip by chip"
+                  class="m-auto sm:m-0"
+                />
               </div>
               <div
                 class="sm:h-72 md:h-64 lg:h-44 flex flex-col justify-between mx-6 sm:mx-0"
@@ -199,15 +215,19 @@
                   </p>
                 </div>
                 <a href="https://groundwork.azavea.com/">
-                  <button class="secondary-btn">
+                  <div class="secondary-btn">
                     Start training with GroundWork
-                  </button>
+                  </div>
                 </a>
               </div>
             </div>
             <div class="sm:w-1/3 mb-16">
               <div class="sm:h-64 flex items-center justify-center">
-                <img src="images/img_rv-pipeline.png" class="m-auto sm:m-0" />
+                <img
+                  src="images/img_rv-pipeline.png"
+                  alt="Diagram of Raster Vision's ability to analyze, predict, evaluate, chip, bundle, and train"
+                  class="m-auto sm:m-0"
+                />
               </div>
               <div
                 class="sm:h-72 md:h-64 lg:h-44 flex flex-col justify-between mx-6 sm:mx-0"
@@ -222,13 +242,17 @@
                   </p>
                 </div>
                 <a href="https://docs.rastervision.io/">
-                  <button class="secondary-btn">Explore documentation</button>
+                  <div class="secondary-btn">Explore documentation</div>
                 </a>
               </div>
             </div>
             <div class="sm:w-1/3 mb-16">
               <div class="sm:h-64 flex items-center justify-center">
-                <img src="images/rv_anim_ss_output.gif" class="m-auto sm:m-0" />
+                <img
+                  src="images/rv_anim_ss_output.gif"
+                  alt="Computer vision rendering of how Raster Vision moves through images chip by chip"
+                  class="m-auto sm:m-0"
+                />
               </div>
               <div
                 class="sm:h-72 md:h-64 lg:h-44 flex flex-col justify-between mx-6 sm:mx-0"
@@ -312,7 +336,11 @@
             <h1 class="text-center text-white">Technical specifications</h1>
             <div class="sm:grid sm:grid-cols-2 md:grid-cols-3">
               <div class="tech-spec text-white">
-                <img src="images/timeline-arrow.svg" class="tech-spec-icon" />
+                <img
+                  src="images/timeline-arrow.svg"
+                  alt=""
+                  class="tech-spec-icon"
+                />
                 <p class="font-semibold text-med">
                   Offers a complete training pipeline for three computer vision
                   tasks
@@ -325,6 +353,7 @@
               <div class="tech-spec text-white">
                 <img
                   src="images/circle-location-arrow.svg"
+                  alt=""
                   class="tech-spec-icon"
                 />
                 <p class="font-semibold text-med">
@@ -336,7 +365,11 @@
                 </p>
               </div>
               <div class="tech-spec text-white">
-                <img src="images/draw-square.svg" class="tech-spec-icon" />
+                <img
+                  src="images/draw-square.svg"
+                  alt=""
+                  class="tech-spec-icon"
+                />
                 <p class="font-semibold text-med">
                   Restrict training chips to an area or interest (AOI)
                 </p>
@@ -347,7 +380,11 @@
                 </p>
               </div>
               <div class="tech-spec text-white">
-                <img src="images/hat-cowboy.svg" class="tech-spec-icon" />
+                <img
+                  src="images/hat-cowboy.svg"
+                  alt=""
+                  class="tech-spec-icon"
+                />
                 <p class="font-semibold text-med">Facilitates data wrangling</p>
                 <p>
                   Raster Vision can ingest both raster and vector data and
@@ -355,7 +392,7 @@
                 </p>
               </div>
               <div class="tech-spec text-white">
-                <img src="images/send-back.svg" class="tech-spec-icon" />
+                <img src="images/send-back.svg" alt="" class="tech-spec-icon" />
                 <p class="font-semibold text-med">
                   Supports multiband imagery (eg. RGBIR images, Sentinel 2
                   imagery)
@@ -367,7 +404,7 @@
                 </p>
               </div>
               <div class="tech-spec text-white">
-                <img src="images/aperture.svg" class="tech-spec-icon" />
+                <img src="images/aperture.svg" alt="" class="tech-spec-icon" />
                 <p class="font-semibold text-med">Offers data augmentation</p>
                 <p>
                   Raster Vision supports customizable Albumentations transforms
@@ -375,7 +412,11 @@
                 </p>
               </div>
               <div class="tech-spec text-white">
-                <img src="images/diagram-sankey.svg" class="tech-spec-icon" />
+                <img
+                  src="images/diagram-sankey.svg"
+                  alt=""
+                  class="tech-spec-icon"
+                />
                 <p class="font-semibold text-med">Custom model specification</p>
                 <p>
                   Utilize a wide variety of compatible models from local
@@ -383,7 +424,7 @@
                 </p>
               </div>
               <div class="tech-spec text-white">
-                <img src="images/flame.svg" class="tech-spec-icon" />
+                <img src="images/flame.svg" alt="" class="tech-spec-icon" />
                 <p class="font-semibold text-med">Based on PyTorch</p>
                 <p>
                   Raster Vision implements deep learning functionality with
@@ -391,7 +432,11 @@
                 </p>
               </div>
               <div class="tech-spec text-white">
-                <img src="images/cloud-word.svg" class="tech-spec-icon" />
+                <img
+                  src="images/cloud-word.svg"
+                  alt=""
+                  class="tech-spec-icon"
+                />
                 <p class="font-semibold text-med">
                   Supports running pipelines in the cloud
                 </p>
@@ -403,6 +448,7 @@
               <div class="tech-spec text-white">
                 <img
                   src="images/table-cells-large.svg"
+                  alt=""
                   class="tech-spec-icon"
                 />
                 <p class="font-semibold text-med">
@@ -429,22 +475,28 @@
             >
               <div class="tech-spec-logo">
                 <a href="https://aws.amazon.com/">
-                  <img src="images/logo-aws.svg" />
+                  <img
+                    src="images/logo-aws.svg"
+                    alt="Amazon Web Services logo"
+                  />
                 </a>
               </div>
               <div class="tech-spec-logo">
                 <a href="https://pytorch.org/">
-                  <img src="images/logo-pytorch.svg" />
+                  <img src="images/logo-pytorch.svg" alt="PyTorch logo" />
                 </a>
               </div>
               <div class="tech-spec-logo">
                 <a href="https://albumentations.ai/">
-                  <img src="images/logo-abulmentations.svg" />
+                  <img
+                    src="images/logo-abulmentations.svg"
+                    alt="Albumentations logo"
+                  />
                 </a>
               </div>
               <div class="tech-spec-logo">
                 <a href="https://numpy.org/">
-                  <img src="images/logo-numpy.svg" />
+                  <img src="images/logo-numpy.svg" alt="Numpy logo" />
                 </a>
               </div>
             </div>
@@ -462,7 +514,11 @@
             </h1>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-8">
               <div>
-                <img class="rounded-lg" src="images/why-use-customizable.jpg" />
+                <img
+                  class="rounded-lg"
+                  alt=""
+                  src="images/why-use-customizable.jpg"
+                />
                 <p class="why-use-headline"><strong>Customizable</strong></p>
                 <p class="xsmall-body text-gray-700">
                   Utilize custom datasets, model architectures, and arbitrary
@@ -470,7 +526,11 @@
                 </p>
               </div>
               <div>
-                <img class="rounded-lg" src="images/why-use-repeatable.jpg" />
+                <img
+                  class="rounded-lg"
+                  alt=""
+                  src="images/why-use-repeatable.jpg"
+                />
                 <p class="why-use-headline">
                   <strong>Repeatable, configurable workflow</strong>
                 </p>
@@ -479,7 +539,11 @@
                 </p>
               </div>
               <div>
-                <img class="rounded-lg" src="images/why-use-opensource.jpg" />
+                <img
+                  class="rounded-lg"
+                  alt=""
+                  src="images/why-use-opensource.jpg"
+                />
                 <p class="why-use-headline"><strong>Open source</strong></p>
                 <p class="xsmall-body text-gray-700">
                   Benefit from a constantly updated & supported framework
@@ -487,7 +551,11 @@
                 </p>
               </div>
               <div>
-                <img class="rounded-lg" src="images/why-use-geodatasets.jpg" />
+                <img
+                  class="rounded-lg"
+                  alt=""
+                  src="images/why-use-geodatasets.jpg"
+                />
                 <p class="why-use-headline">
                   <strong>Handles geospatial datasets</strong>
                 </p>
@@ -500,6 +568,7 @@
               <div>
                 <img
                   class="rounded-lg"
+                  alt=""
                   src="images/why-use-massiveimgagery.jpg"
                 />
                 <p class="why-use-headline">
@@ -511,7 +580,11 @@
                 </p>
               </div>
               <div>
-                <img class="rounded-lg" src="images/why-use-lowbarrier.jpg" />
+                <img
+                  class="rounded-lg"
+                  alt=""
+                  src="images/why-use-lowbarrier.jpg"
+                />
                 <p class="why-use-headline">
                   <strong>Low barrier to entry</strong>
                 </p>
@@ -522,7 +595,11 @@
                 </p>
               </div>
               <div>
-                <img class="rounded-lg" src="images/why-use-fastaws.jpg" />
+                <img
+                  class="rounded-lg"
+                  alt=""
+                  src="images/why-use-fastaws.jpg"
+                />
                 <p class="why-use-headline">
                   <strong>Fast AWS Batch setup process</strong>
                 </p>
@@ -531,7 +608,11 @@
                 </p>
               </div>
               <div>
-                <img class="rounded-lg" src="images/why-use-extensible.jpg" />
+                <img
+                  class="rounded-lg"
+                  alt=""
+                  src="images/why-use-extensible.jpg"
+                />
                 <p class="why-use-headline">
                   <strong>Extensible architecture</strong>
                 </p>
@@ -560,7 +641,7 @@
               </h1>
               <h4 class="mt-6 mb-5">Select a scenario</h4>
               <div class="flex flex-col gap-3">
-                <div
+                <button
                   id="repeatable-config-0"
                   class="repeatable-config-selection selected border-2 border-teal-500"
                 >
@@ -573,8 +654,8 @@
                       ></div>
                     </div>
                   </div>
-                </div>
-                <div
+                </button>
+                <button
                   id="repeatable-config-1"
                   class="repeatable-config-selection"
                 >
@@ -587,8 +668,8 @@
                       ></div>
                     </div>
                   </div>
-                </div>
-                <div
+                </button>
+                <button
                   id="repeatable-config-2"
                   class="repeatable-config-selection"
                 >
@@ -601,7 +682,7 @@
                       ></div>
                     </div>
                   </div>
-                </div>
+                </button>
               </div>
               <p class="small-body text-gray-700 mt-6">
                 Based on open-source data.
@@ -640,6 +721,7 @@
               <img
                 id="legend"
                 class="absolute"
+                alt=""
                 src="images/demo-segsem-legend.svg"
               />
               <img
@@ -674,6 +756,7 @@
                   </div>
                   <img
                     src="images/icon-chevron-right.svg"
+                    alt="Go to Raster Vision GitHub discussions"
                     class="contact-us-arrow"
                   />
                 </div>
@@ -689,6 +772,7 @@
                   </div>
                   <img
                     src="images/icon-chevron-right.svg"
+                    alt="Go to Raster Vision's contribution guidelines"
                     class="contact-us-arrow"
                   />
                 </div>
@@ -704,6 +788,7 @@
                   </div>
                   <img
                     src="images/icon-chevron-right.svg"
+                    alt="Go to Azavea's project page"
                     class="contact-us-arrow"
                   />
                 </div>
@@ -787,19 +872,17 @@
                       Vision?</label
                     >
                     <textarea
-                      type="text"
                       id="message"
                       name="message"
                       class="contact-us-input h-20"
                     ></textarea>
                   </div>
                 </div>
-                <button
+                <input
                   type="submit"
-                  class="call-to-action-btn w-full text-center mt-4"
-                >
-                  Send
-                </button>
+                  value="Send"
+                  class="call-to-action-btn w-full text-center mt-4 hover:cursor-pointer"
+                />
                 <div
                   id="form-error-msg"
                   class="text-white text-med mt-2 text-center"
@@ -818,7 +901,7 @@
           <div
             class="relative flex object-bottom h-lets-chat-small sm:h-lets-chat mt-20 sm:mt-0 justify-center"
           >
-            <img src="images/letschat.svg" class="absolute bottom-0" />
+            <img src="images/letschat.svg" alt="" class="absolute bottom-0" />
           </div>
         </div>
       </div>
