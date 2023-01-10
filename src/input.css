@@ -19,23 +19,20 @@
   @apply font-normal text-4xl leading-display text-teal;
 }
 
-.h3-blue {
-  @apply font-semibold text-lg text-teal;
+.large-headline {
+  @apply font-normal text-3xl text-black;
 }
 
-@layer base {
-  h1 {
-    @apply font-normal text-3xl text-black;
-  }
-  h2 {
-    @apply font-normal text-2xl text-black;
-  }
-  h3 {
-    @apply font-semibold text-lg text-black;
-  }
-  h4 {
-    @apply font-semibold text-med uppercase text-gray-700;
-  }
+.medium-headline {
+  @apply font-normal text-2xl text-black;
+}
+
+.small-headline {
+  @apply font-semibold text-lg text-black;
+}
+
+.small-headline-all-caps {
+  @apply font-semibold text-med uppercase text-gray-700;
 }
 
 @layer components {
