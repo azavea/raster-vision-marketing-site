@@ -292,7 +292,8 @@
           >
             <div class="basis-2/5 text-center md:text-left">
               <h3 class="text-2xl sm:text-3xl large-heading">
-                Scaling <i>beyond</i> geospatial tech
+                Scaling <i>beyond</i><br />
+                geospatial tech
               </h3>
               <p class="large-body leading-8 my-7">
                 Raster Vision is versatile and can seamlessly handle the
@@ -308,23 +309,43 @@
               >
             </div>
             <div
-              class="flex display text-3xl sm:text-4xl md:text-3xl lg:text-4xl h-48 overflow-hidden tracking-tight align-middle justify-center m-auto"
+              class="flex display text-3.5xl sm:text-4xl h-48 overflow-hidden tracking-tight align-middle justify-center m-auto"
             >
               <!-- add bars to highlight only middle word in rolodex -->
               <div class="rolodex-bars"></div>
               <div class="rolodex-bars mt-24 rotate-180"></div>
-              <ul class="animate-rolodex text-center z-20">
+              <!-- wrapping breaks the animation, so adding a safeguard just in case -->
+              <ul class="animate-rolodex text-center z-20 whitespace-nowrap">
                 <li>Forestry</li>
                 <li>Healthcare</li>
                 <li>Academia</li>
                 <li>Supply Chain</li>
-                <li>Energy Transition</li>
-                <li>Oceans & Water</li>
-                <!-- this shouldn't ever wrap but if it does, the animation breaks, so adding a safeguard just in case -->
-                <li class="whitespace-nowrap">Climate Adaptation</li>
+                <li class="hidden sm:block md:hidden lg:block">
+                  Energy Transition
+                </li>
+                <li class="sm:hidden md:block lg:hidden" aria-hidden="true">
+                  Clean Energy
+                </li>
+                <li class="hidden sm:block md:hidden lg:block">
+                  Oceans & Water
+                </li>
+                <li class="sm:hidden md:block lg:hidden" aria-hidden="true">
+                  Waterways
+                </li>
+                <li class="hidden sm:block md:hidden lg:block">
+                  Climate Adaptation
+                </li>
+                <li class="sm:hidden md:block lg:hidden" aria-hidden="true">
+                  Climate
+                </li>
                 <li>Non-profit</li>
                 <li>Agriculture</li>
-                <li class="whitespace-nowrap">Artificial Intelligence</li>
+                <li class="hidden sm:block md:hidden lg:block">
+                  Artificial Intelligence
+                </li>
+                <li class="sm:hidden md:block lg:hidden" aria-hidden="true">
+                  AI
+                </li>
                 <li>Forestry</li>
                 <li>Healthcare</li>
                 <li>Academia</li>
