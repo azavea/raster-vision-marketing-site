@@ -46,6 +46,7 @@ module.exports = {
       lg: "1.125rem",
       "2xl": "1.5rem",
       "3xl": "2rem",
+      "3.5xl": "2.75rem",
       "4xl": "3.125rem",
     },
     textColor: {
@@ -123,7 +124,7 @@ module.exports = {
         },
       },
       animation: {
-        rolodex: "roll 30s cubic-bezier(.75,0,.25,1) infinite",
+        rolodex: "roll 20s cubic-bezier(.75,0,.25,1) infinite",
       },
     },
   },
