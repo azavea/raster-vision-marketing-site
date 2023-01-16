@@ -27,6 +27,14 @@
     />
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?" />
+    <!--Hero slider gets out of sync if an image doesn't load in time, so loading all up front-->
+    <link rel="preload" as="image" href="images/hero-trafficdensity.png" />
+    <link rel="preload" as="image" href="images/hero-crophealth2.png" />
+    <link rel="preload" as="image" href="images/hero-forestloss.png" />
+    <link rel="preload" as="image" href="images/hero-nucleidetection.png" />
+    <link rel="preload" as="image" href="images/hero-ripcurrents.png" />
+    <link rel="preload" as="image" href="images/hero-solarirradiation.png" />
+    <link rel="preload" as="image" href="images/hero-stormdamage.png" />
   </head>
 
   <body class="overflow-x-hidden">
@@ -184,7 +192,7 @@
             </div>
             <div class="basis-1/2 max-w-xl my-auto">
               <img
-                src="images/img-rv-computervision-tasks.png"
+                src="images/computervision-tasks.png"
                 alt="Diagram illustrating the different applications of Raster Vision"
                 class="m-auto sm:m-0 pt-10"
               />
@@ -851,6 +859,9 @@
                 alt="A satellite image of a suburban neighborhood with buildings highlighted"
                 src="images/demo-semseg.jpg"
               />
+              <!--Loading these in the background to improve response speed on slow internet-->
+              <img class="hidden" src="images/demo-chipclassification.jpg" />
+              <img class="hidden" src="images/demo-objectdetection.jpg" />
             </div>
           </div>
         </div>
