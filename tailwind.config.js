@@ -82,6 +82,7 @@ module.exports = {
       minHeight: {
         hero: "775px",
         "hero-text": "200px",
+        "mobile-hero-text": "155px",
         "contact-us-arrow": "12px",
       },
       minWidth: {

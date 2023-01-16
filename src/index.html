@@ -88,21 +88,21 @@
           class="relative top-0 w-full h-80 sm:absolute sm:right-0 sm:w-hero sm:max-w-hero sm:h-hero sm:min-h-hero"
         >
           <img
-            src="images/hero-trafficdensity.png"
-            alt="Traffic on a highway interchange"
+            src="images/hero-crophealth2.png"
+            alt="Aerial view of fields of crops"
             class="hero-image primary"
             id="hero-img-0"
           />
           <img
-            src="images/hero-crophealth2.png"
-            alt="Aerial view of fields of crops"
+            src="images/hero-trafficdensity.png"
+            alt="Traffic on a highway interchange"
             class="hero-image secondary hidden"
             aria-hidden="true"
             id="hero-img-1"
           />
         </div>
         <div class="flex max-width-container w-full py-0 sm:min-h-hero">
-          <div class="flex flex-col max-w-linked-buttons w-3/4 left-0">
+          <div class="flex flex-col sm:max-w-linked-buttons sm:w-3/4 left-0">
             <div>
               <img
                 src="images/rv-logo.svg"
@@ -111,13 +111,15 @@
               />
             </div>
             <div class="sm:h-40"></div>
-            <div class="max-w-header-text z-40 min-h-hero-text">
+            <div
+              class="sm:max-w-header-text z-40 min-h-mobile-hero-text sm:min-h-hero-text"
+            >
               <h1 class="text-lg sm:text-2xl medium-headline">
                 An open-source ML library for
               </h1>
               <h1
                 id="hero-text"
-                class="display mt-2 text-3xl leading-tight sm:text-4xl"
+                class="display my-2 text-3xl leading-tight sm:text-4xl"
               ></h1>
             </div>
             <div class="h-2 sm:h-10"></div>
@@ -1070,7 +1072,7 @@
     <script>
       typewriterEffect(
         document.getElementById("hero-text"),
-        "measuring traffic density"
+        "deep learning on satellite and aerial imagery"
       );
     </script>
     <script>
