@@ -60,6 +60,10 @@
     @apply h-28 w-32 flex justify-center items-center;
   }
 
+  .tech-spec-description {
+    @apply small-body mt-2;
+  }
+
   .hero-image {
     @apply absolute bottom-0 -rotate-90 object-left object-cover sm:h-hero sm:transform-none;
   }
