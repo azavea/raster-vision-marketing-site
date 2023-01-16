@@ -1,5 +1,10 @@
 const heroTextAndImage = [
   {
+    text: "deep learning on satellite and aerial imagery",
+    src: "images/hero-crophealth2.png",
+    alt: "Aerial view of fields of crops",
+  },
+  {
     text: "measuring traffic density",
     src: "images/hero-trafficdensity.png",
     alt: "Traffic on a highway interchange",
@@ -90,7 +95,7 @@ function typewriterEffect(textElem, newText) {
     loop: false,
     autoStart: true,
     strings: newText,
-    delay: 75,
+    delay: 60,
     cursor: "_",
   });
 }
