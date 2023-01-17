@@ -1,30 +1,30 @@
 @import "tailwindcss/base";
 .xsmall-body {
-  @apply font-normal text-xs text-gray-800;
+  @apply font-light text-xs text-gray-800;
 }
 
 .small-body {
-  @apply font-normal text-sm text-gray-800;
+  @apply font-light text-sm text-gray-800;
 }
 
 .medium-body {
-  @apply font-normal text-med text-gray-800;
+  @apply font-light text-med text-gray-800;
 }
 
 .large-body {
-  @apply font-normal text-lg text-gray-800;
+  @apply font-light text-lg text-gray-800;
 }
 
 .display {
-  @apply font-normal text-4xl leading-display text-teal;
+  @apply font-light text-4xl leading-display text-teal;
 }
 
 .large-headline {
-  @apply font-normal text-3xl text-black;
+  @apply font-light text-3xl text-black;
 }
 
 .medium-headline {
-  @apply font-normal text-2xl text-black;
+  @apply font-light text-2xl text-black;
 }
 
 .small-headline {
@@ -41,7 +41,7 @@
   }
 
   .secondary-btn {
-    @apply rounded bg-white-0 text-black border-gray-300 border-1 p-2 hover:bg-gray-100 font-semibold;
+    @apply rounded bg-white-0 text-black border-gray-300 border-1 p-2 hover:bg-gray-100 font-medium;
   }
 
   .max-width-container {
@@ -60,6 +60,10 @@
     @apply h-28 w-32 flex justify-center items-center;
   }
 
+  .tech-spec-description {
+    @apply small-body mt-2;
+  }
+
   .hero-image {
     @apply absolute bottom-0 -rotate-90 object-left object-cover sm:h-hero sm:transform-none;
   }
@@ -73,11 +77,11 @@
   }
 
   .why-use-headline {
-    @apply text-med font-semibold text-black mt-3 mb-1;
+    @apply text-med font-medium text-black mt-3 mb-1;
   }
 
   .repeatable-config-selection {
-    @apply rounded-md bg-white-0 text-black border-gray-300 border-1 p-2 font-semibold h-10 text-med text-left hover:cursor-pointer;
+    @apply rounded-md bg-white-0 text-black border-gray-300 border-1 p-2 font-medium h-10 text-med text-left hover:cursor-pointer;
   }
 
   .repeatable-config-button-container {

@@ -22,7 +22,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/output.css" />
@@ -56,14 +56,14 @@
         <div class="flex flex-row items-center">
           <a href="https://github.com/azavea/raster-vision/discussions">
             <div
-              class="hidden sm:flex text-gray-700 font-semibold hover:underline mr-1.5 md:mr-6 text-center"
+              class="hidden sm:flex text-gray-700 font-medium hover:underline mr-1.5 md:mr-6 text-center"
             >
               Github Discussions
             </div>
           </a>
           <a href="https://docs.rastervision.io/">
             <div
-              class="hidden sm:flex text-gray-700 font-semibold hover:underline mr-1.5 md:mr-6"
+              class="hidden sm:flex text-gray-700 font-medium hover:underline mr-1.5 md:mr-6"
             >
               Documentation
             </div>
@@ -73,8 +73,8 @@
               <div
                 class="w-24 md:w-32 h-6 sm:h-8 flex justify-center align-middle"
               >
-                <div class="m-auto text-med md:text-lg font-semibold">
-                  Get started
+                <div class="m-auto text-med md:text-lg font-medium">
+                  Get Started
                 </div>
               </div>
             </div>
@@ -179,7 +179,7 @@
         <div class="max-width-container">
           <div class="mt-14 sm:flex sm:flex-row sm:mt-0 gap-10">
             <div class="basis-1/2 my-auto">
-              <h2 class="large-heading text-2xl text-white mb-6 md:text-3xl">
+              <h2 class="large-headline text-2xl text-white mb-6 md:text-3xl">
                 Build intelligent <i>geospatial</i> applications with deep
                 learning.
               </h2>
@@ -301,7 +301,7 @@
             class="flex flex-col-reverse md:flex-row justify-between my-6 sm:my-10 md:my-20 gap-6"
           >
             <div class="basis-2/5 text-center md:text-left">
-              <h3 class="text-2xl sm:text-3xl large-heading">
+              <h3 class="text-2xl sm:text-3xl large-headline">
                 Scaling <i>beyond</i><br />
                 geospatial tech
               </h3>
@@ -388,7 +388,7 @@
           <div class="flex justify-center py-4">
             <button
               id="spec-button"
-              class="sm:hidden text-white border-gray-300 w-80 border-opacity-10 border-1 py-2 px-10 font-semibold"
+              class="sm:hidden text-white border-gray-300 w-80 border-opacity-10 border-1 py-2 px-10 font-medium"
             >
               See more specs
             </button>
@@ -404,11 +404,11 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">
+                <h4 class="font-medium text-med">
                   Offers a complete training pipeline for three computer vision
                   tasks
                 </h4>
-                <p>
+                <p class="tech-spec-description text-white">
                   Including chip classification, object detection, and semantic
                   segmentation.
                 </p>
@@ -419,10 +419,10 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">
+                <h4 class="font-medium text-med">
                   Produces georeferenced outputs
                 </h4>
-                <p>
+                <p class="tech-spec-description text-white">
                   Raster Vision produces predictions that are georeferenced and
                   ready for downstream analysis.
                 </p>
@@ -433,10 +433,10 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">
+                <h4 class="font-medium text-med">
                   Restrict training chips to an area or interest (AOI)
                 </h4>
-                <p>
+                <p class="tech-spec-description text-white">
                   Fully annotating a large pixel scene is costly and time
                   consuming. Raster Vision supports specifying an AOI in the
                   form of one or more polygons.
@@ -448,10 +448,8 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">
-                  Facilitates data wrangling
-                </h4>
-                <p>
+                <h4 class="font-medium text-med">Facilitates data wrangling</h4>
+                <p class="tech-spec-description text-white">
                   Raster Vision can ingest both raster and vector data and
                   convert them to a form suitable for training.
                 </p>
@@ -462,11 +460,11 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">
+                <h4 class="font-medium text-med">
                   Supports multiband imagery (eg. RGBIR images, Sentinel 2
                   imagery)
                 </h4>
-                <p>
+                <p class="tech-spec-description text-white">
                   While retaining the existing pre-trained weights, Raster
                   Vision modifies the first convolutional layer to accept
                   additional (or fewer) channels.
@@ -478,8 +476,8 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">Offers data augmentation</h4>
-                <p>
+                <h4 class="font-medium text-med">Offers data augmentation</h4>
+                <p class="tech-spec-description text-white">
                   Raster Vision supports customizable Albumentations transforms
                   to use during training.
                 </p>
@@ -490,10 +488,8 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">
-                  Custom model specification
-                </h4>
-                <p>
+                <h4 class="font-medium text-med">Custom model specification</h4>
+                <p class="tech-spec-description text-white">
                   Utilize a wide variety of compatible models from local
                   directories using TorchHub.
                 </p>
@@ -504,8 +500,8 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">Based on PyTorch</h4>
-                <p>
+                <h4 class="font-medium text-med">Based on PyTorch</h4>
+                <p class="tech-spec-description text-white">
                   Raster Vision implements deep learning functionality with
                   PyTorch (a popular deep learning library) and Torchvision.
                 </p>
@@ -516,10 +512,10 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">
+                <h4 class="font-medium text-med">
                   Supports running pipelines in the cloud
                 </h4>
-                <p>
+                <p class="tech-spec-description text-white">
                   Raster Vision provides support for running pipelines using AWS
                   Batch.
                 </p>
@@ -530,10 +526,10 @@
                   class="tech-spec-icon"
                   aria-hidden="true"
                 />
-                <h4 class="font-semibold text-med">
+                <h4 class="font-medium text-med">
                   Supports configurable chip reading
                 </h4>
-                <p>
+                <p class="tech-spec-description text-white">
                   Geospatial images tend to be too large to feed directly into a
                   neural network and must first be broken up into smaller
                   “chips”.
@@ -647,8 +643,8 @@
                   src="images/why-use-customizable.jpg"
                   aria-hidden="true"
                 />
-                <h4 class="why-use-headline"><strong>Customizable</strong></h4>
-                <p class="xsmall-body text-gray-700">
+                <h4 class="why-use-headline">Customizable</h4>
+                <p class="small-body text-gray-700">
                   Utilize custom datasets, model architectures, and arbitrary
                   loss functions.
                 </p>
@@ -660,9 +656,9 @@
                   aria-hidden="true"
                 />
                 <h4 class="why-use-headline">
-                  <strong>Repeatable, configurable workflow</strong>
+                  Repeatable, configurable workflow
                 </h4>
-                <p class="xsmall-body text-gray-700">
+                <p class="small-body text-gray-700">
                   Create consistent and maintainable results.
                 </p>
               </div>
@@ -672,8 +668,8 @@
                   src="images/why-use-opensource.jpg"
                   aria-hidden="true"
                 />
-                <h4 class="why-use-headline"><strong>Open source</strong></h4>
-                <p class="xsmall-body text-gray-700">
+                <h4 class="why-use-headline">Open source</h4>
+                <p class="small-body text-gray-700">
                   Benefit from a constantly updated & supported framework
                   released under the open source Apache 2.0 license.
                 </p>
@@ -684,10 +680,8 @@
                   src="images/why-use-geodatasets.jpg"
                   aria-hidden="true"
                 />
-                <h4 class="why-use-headline">
-                  <strong>Handles geospatial datasets</strong>
-                </h4>
-                <p class="xsmall-body text-gray-700">
+                <h4 class="why-use-headline">Handles geospatial datasets</h4>
+                <p class="small-body text-gray-700">
                   Handles a variety of geospatial file formats, map-based
                   coordinates, incomplete labeling, and multiband (3+ bands)
                   imagery.
@@ -699,10 +693,8 @@
                   src="images/why-use-massiveimgagery.jpg"
                   aria-hidden="true"
                 />
-                <h4 class="why-use-headline">
-                  <strong>Supports massive imagery</strong>
-                </h4>
-                <p class="xsmall-body text-gray-700">
+                <h4 class="why-use-headline">Supports massive imagery</h4>
+                <p class="small-body text-gray-700">
                   Works out-of-the-box with massive imagery commonly used in the
                   geospatial field.
                 </p>
@@ -713,10 +705,8 @@
                   src="images/why-use-lowbarrier.jpg"
                   aria-hidden="true"
                 />
-                <h4 class="why-use-headline">
-                  <strong>Low barrier to entry</strong>
-                </h4>
-                <p class="xsmall-body text-gray-700">
+                <h4 class="why-use-headline">Low barrier to entry</h4>
+                <p class="small-body text-gray-700">
                   Enjoy a high-level programmatic API with sensible defaults for
                   configuring modeling pipelines. Doesn't require expertise in
                   PyTorch or deep learning.
@@ -728,10 +718,8 @@
                   src="images/why-use-fastaws.jpg"
                   aria-hidden="true"
                 />
-                <h4 class="why-use-headline">
-                  <strong>Fast AWS Batch setup process</strong>
-                </h4>
-                <p class="xsmall-body text-gray-700">
+                <h4 class="why-use-headline">Fast AWS Batch setup process</h4>
+                <p class="small-body text-gray-700">
                   Skip the manual setup and use CloudFormation templates.
                 </p>
               </div>
@@ -741,10 +729,8 @@
                   src="images/why-use-extensible.jpg"
                   aria-hidden="true"
                 />
-                <h4 class="why-use-headline">
-                  <strong>Extensible architecture</strong>
-                </h4>
-                <p class="xsmall-body text-gray-700">
+                <h4 class="why-use-headline">Extensible architecture</h4>
+                <p class="small-body text-gray-700">
                   Object-oriented architecture is extendable to new computer
                   vision tasks and deep learning frameworks.
                 </p>
@@ -757,7 +743,7 @@
     <section>
       <div class="bg-white-0">
         <div class="max-width-container sm:mt-10">
-          <h2 class="text-lg text-center mb-12 sm:mb-7 md:text-2xl">
+          <h2 class="text-lg font-light text-center mb-12 sm:mb-7 md:text-2xl">
             Easily use models in various deployment scenarios
           </h2>
           <div class="md:flex md:flex-row gap-x-4 lg:mx-12">
@@ -834,7 +820,7 @@
                         <div
                           class="flex rounded bg-gray-800 w-56 h-10 md:h-8 lg:h-10 justify-center"
                         >
-                          <div class="m-auto font-semibold text-white">
+                          <div class="m-auto font-medium text-white">
                             View full documentation
                           </div>
                         </div>
