@@ -318,14 +318,19 @@
                 </div></a
               >
             </div>
+            <!-- This animation has an alternative appearance for users who prefer reduced motion -->
             <div
-              class="flex display text-3.5xl sm:text-4xl h-48 overflow-hidden tracking-tight align-middle justify-center m-auto"
+              class="flex display text-3.5xl sm:text-4xl motion-safe:h-48 motion-reduce:h-16 overflow-hidden tracking-tight align-middle justify-center m-auto"
             >
-              <!-- add bars to highlight only middle word in rolodex -->
-              <div class="rolodex-bars"></div>
-              <div class="rolodex-bars mt-24 rotate-180"></div>
+              <!-- add bars to highlight only middle word in rolodex for motion safe users -->
+              <div class="rolodex-bars motion-reduce:hidden"></div>
+              <div
+                class="rolodex-bars mt-24 rotate-180 motion-reduce:hidden"
+              ></div>
               <!-- wrapping breaks the animation, so adding a safeguard just in case -->
-              <ul class="animate-rolodex text-center z-20 whitespace-nowrap">
+              <ul
+                class="motion-safe:animate-rolodex text-center z-20 whitespace-nowrap motion-reduce:animate-fadeIn"
+              >
                 <li>Forestry</li>
                 <li>Healthcare</li>
                 <li>Academia</li>
