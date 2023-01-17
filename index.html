@@ -219,7 +219,12 @@
                 <img
                   src="images/rv_anim_ss_input.gif"
                   alt="Demonstration of how Raster Vision moves through images chip by chip"
-                  class="m-auto sm:m-0"
+                  class="m-auto sm:m-0 motion-reduce:hidden"
+                />
+                <img
+                  src="images/rv_anim_ss_input_static.png"
+                  alt="Demonstration of how Raster Vision moves through images chip by chip"
+                  class="m-auto sm:m-0 motion-safe:hidden"
                 />
               </div>
               <div
@@ -272,7 +277,12 @@
                 <img
                   src="images/rv_anim_ss_output.gif"
                   alt="Computer vision rendering of how Raster Vision moves through images chip by chip"
-                  class="m-auto sm:m-0"
+                  class="m-auto sm:m-0 motion-reduce:hidden"
+                />
+                <img
+                  src="images/rv_anim_ss_output_static.png"
+                  alt="Computer vision rendering of how Raster Vision moves through images chip by chip"
+                  class="m-auto sm:m-0 motion-safe:hidden"
                 />
               </div>
               <div
@@ -318,14 +328,19 @@
                 </div></a
               >
             </div>
+            <!-- This animation has an alternative appearance for users who prefer reduced motion -->
             <div
-              class="flex display text-3.5xl sm:text-4xl h-48 overflow-hidden tracking-tight align-middle justify-center m-auto"
+              class="flex display text-3.5xl sm:text-4xl motion-safe:h-48 motion-reduce:h-16 overflow-hidden tracking-tight align-middle justify-center m-auto"
             >
-              <!-- add bars to highlight only middle word in rolodex -->
-              <div class="rolodex-bars"></div>
-              <div class="rolodex-bars mt-24 rotate-180"></div>
+              <!-- add bars to highlight only middle word in rolodex for motion safe users -->
+              <div class="rolodex-bars motion-reduce:hidden"></div>
+              <div
+                class="rolodex-bars mt-24 rotate-180 motion-reduce:hidden"
+              ></div>
               <!-- wrapping breaks the animation, so adding a safeguard just in case -->
-              <ul class="animate-rolodex text-center z-20 whitespace-nowrap">
+              <ul
+                class="motion-safe:animate-rolodex text-center z-20 whitespace-nowrap motion-reduce:animate-fadeIn"
+              >
                 <li>Forestry</li>
                 <li>Healthcare</li>
                 <li>Academia</li>
@@ -1056,23 +1071,58 @@
       </div>
     </section>
     <script>
-      typewriterEffect(
-        document.getElementById("hero-text"),
-        "deep learning on satellite and aerial imagery"
-      );
+      const heroTextElem = document.getElementById("hero-text");
+      // don't automatically enable typewriter for reduced motion users
+      if (!mediaQuery.matches) {
+        typewriterEffect(
+          heroTextElem,
+          "deep learning on satellite and aerial imagery",
+          mediaQuery.matches
+        );
+      } else {
+        heroTextElem.innerHTML =
+          "deep learning on satellite and aerial imagery";
+      }
     </script>
     <script>
-      let interval = setInterval(changeHeroTextAndImage, 5000, true);
+      // don't automatically start slideshow for reduced motion users
+      if (!mediaQuery.matches) {
+        let interval = setInterval(
+          changeHeroTextAndImage,
+          5000,
+          true,
+          mediaQuery.matches
+        );
+      }
       $("#left-button").click(function () {
-        clearInterval(interval);
-        changeHeroTextAndImage(false);
-        interval = setInterval(changeHeroTextAndImage, 5000, true);
+        changeHeroTextAndImage(false, mediaQuery.matches);
+        // only reset the slideshow interval for motion safe users
+        if (!mediaQuery.matches) {
+          setNewHeroInterval(interval);
+        }
       });
       $("#right-button").click(function () {
-        clearInterval(interval);
-        changeHeroTextAndImage(true);
-        interval = setInterval(changeHeroTextAndImage, 5000, true);
+        changeHeroTextAndImage(true, mediaQuery.matches);
+        // only reset the slideshow interval for motion safe users
+        if (!mediaQuery.matches) {
+          setNewHeroInterval(interval);
+        }
       });
+      // Update hero behavior on reduce motion setting change
+      mediaQuery.addEventListener("change", () => {
+        mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (mediaQuery.matches) {
+          clearInterval(interval);
+        } else {
+          interval = setInterval(
+            changeHeroTextAndImage,
+            5000,
+            true,
+            mediaQuery.matches
+          );
+        }
+      });
+
       //Add desktop header on scroll
       window.onscroll = function () {
         evalHeaderOnChange();
