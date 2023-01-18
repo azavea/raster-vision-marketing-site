@@ -1092,26 +1092,33 @@
     </script>
     <script>
       // don't automatically start slideshow for reduced motion users
-      if (!mediaQuery.matches) {
-        let interval = setInterval(
-          changeHeroTextAndImage,
-          5000,
-          true,
-          mediaQuery.matches
-        );
-      }
+      let interval = !mediaQuery.matches
+        ? setInterval(changeHeroTextAndImage, 5000, true, mediaQuery.matches)
+        : null;
       $("#left-button").click(function () {
+        clearInterval(interval);
         changeHeroTextAndImage(false, mediaQuery.matches);
         // only reset the slideshow interval for motion safe users
         if (!mediaQuery.matches) {
-          setNewHeroInterval(interval);
+          interval = setInterval(
+            changeHeroTextAndImage,
+            5000,
+            true,
+            mediaQuery.matches
+          );
         }
       });
       $("#right-button").click(function () {
+        clearInterval(interval);
         changeHeroTextAndImage(true, mediaQuery.matches);
         // only reset the slideshow interval for motion safe users
         if (!mediaQuery.matches) {
-          setNewHeroInterval(interval);
+          interval = setInterval(
+            changeHeroTextAndImage,
+            5000,
+            true,
+            mediaQuery.matches
+          );
         }
       });
       // Update hero behavior on reduce motion setting change

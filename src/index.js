@@ -96,16 +96,6 @@ function changeHeroTextAndImage(moveForward, reduceMotion) {
   }
 }
 
-function setNewHeroInterval(interval) {
-  clearInterval(interval);
-  interval = setInterval(
-    changeHeroTextAndImage,
-    5000,
-    true,
-    mediaQuery.matches
-  );
-}
-
 function typewriterEffect(textElem, newText) {
   new Typewriter(textElem, {
     loop: false,
