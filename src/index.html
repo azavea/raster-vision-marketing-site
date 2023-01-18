@@ -120,30 +120,36 @@
               <h1
                 id="hero-text"
                 class="display my-2 text-3xl leading-tight sm:text-4xl"
+                aria-hidden="true"
               ></h1>
+              <h1 id="hero-text-sr" class="sr-only">
+                deep learning on satellite and aerial imagery
+              </h1>
             </div>
             <div class="h-2 sm:h-10"></div>
             <div class="flex gap-3 top-8 sm:top-32">
-              <div
+              <button
                 id="left-button"
                 class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
+                aria-label="Navigate to previous example"
               >
                 <img
                   src="images/icon-chevron-left.svg"
-                  alt="Navigate to next use case"
                   class="mx-auto my-hero-button-arrow"
+                  aria-hidden="true"
                 />
-              </div>
-              <div
+              </button>
+              <button
                 id="right-button"
                 class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
+                aria-label="Navigate to next example"
               >
                 <img
                   src="images/icon-chevron-right.svg"
-                  alt="Navigate to previous use case"
                   class="mx-auto my-hero-button-arrow"
+                  aria-hidden="true"
                 />
-              </div>
+              </button>
             </div>
             <div class="h-8 sm:h-20"></div>
             <div
@@ -297,7 +303,6 @@
                     and other custom workflows.
                   </p>
                 </div>
-                <div></div>
               </div>
             </div>
           </div>
@@ -404,6 +409,8 @@
             <button
               id="spec-button"
               class="sm:hidden text-white border-gray-300 w-80 border-opacity-10 border-1 py-2 px-10 font-medium"
+              role="switch"
+              aria-checked="off"
             >
               See more specs
             </button>
@@ -774,7 +781,9 @@
                   id="repeatable-config-0"
                   class="repeatable-config-selection selected border-2 border-teal-500"
                 >
-                  <button>Semantic segmentation</button>
+                  <button aria-label="View semantic segmentation scenario">
+                    Semantic segmentation
+                  </button>
                   <div class="repeatable-config-button-container">
                     <div class="repeatable-config-outer-button">
                       <div
@@ -788,7 +797,9 @@
                   id="repeatable-config-1"
                   class="repeatable-config-selection"
                 >
-                  <button>Chip classification</button>
+                  <button aria-label="View chip classification scenario">
+                    Chip classification
+                  </button>
                   <div class="repeatable-config-button-container">
                     <div class="repeatable-config-outer-button">
                       <div
@@ -802,7 +813,9 @@
                   id="repeatable-config-2"
                   class="repeatable-config-selection"
                 >
-                  <button>Object detection</button>
+                  <button aria-label="View object detection scenario">
+                    Object detection
+                  </button>
                   <div class="repeatable-config-button-container">
                     <div class="repeatable-config-outer-button">
                       <div
@@ -1086,26 +1099,33 @@
     </script>
     <script>
       // don't automatically start slideshow for reduced motion users
-      if (!mediaQuery.matches) {
-        let interval = setInterval(
-          changeHeroTextAndImage,
-          5000,
-          true,
-          mediaQuery.matches
-        );
-      }
+      let interval = !mediaQuery.matches
+        ? setInterval(changeHeroTextAndImage, 5000, true, mediaQuery.matches)
+        : null;
       $("#left-button").click(function () {
+        clearInterval(interval);
         changeHeroTextAndImage(false, mediaQuery.matches);
         // only reset the slideshow interval for motion safe users
         if (!mediaQuery.matches) {
-          setNewHeroInterval(interval);
+          interval = setInterval(
+            changeHeroTextAndImage,
+            5000,
+            true,
+            mediaQuery.matches
+          );
         }
       });
       $("#right-button").click(function () {
+        clearInterval(interval);
         changeHeroTextAndImage(true, mediaQuery.matches);
         // only reset the slideshow interval for motion safe users
         if (!mediaQuery.matches) {
-          setNewHeroInterval(interval);
+          interval = setInterval(
+            changeHeroTextAndImage,
+            5000,
+            true,
+            mediaQuery.matches
+          );
         }
       });
       // Update hero behavior on reduce motion setting change
@@ -1144,9 +1164,11 @@
         if (specSection.classList.contains("hidden")) {
           specSection.classList.remove("hidden");
           specButton.innerHTML = "See less specs";
+          specButton.ariaChecked = "on";
         } else {
           specSection.classList.add("hidden");
           specButton.innerHTML = "See more specs";
+          specButton.ariaChecked = "off";
         }
       });
     </script>
