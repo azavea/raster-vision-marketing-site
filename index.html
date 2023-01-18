@@ -409,7 +409,8 @@
             <button
               id="spec-button"
               class="sm:hidden text-white border-gray-300 w-80 border-opacity-10 border-1 py-2 px-10 font-medium"
-              aria-label="Expand list of technical specifications"
+              role="switch"
+              aria-checked="off"
             >
               See more specs
             </button>
@@ -1163,9 +1164,11 @@
         if (specSection.classList.contains("hidden")) {
           specSection.classList.remove("hidden");
           specButton.innerHTML = "See less specs";
+          specButton.ariaChecked = "on";
         } else {
           specSection.classList.add("hidden");
           specButton.innerHTML = "See more specs";
+          specButton.ariaChecked = "off";
         }
       });
     </script>
