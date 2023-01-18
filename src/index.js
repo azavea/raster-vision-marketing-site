@@ -62,7 +62,7 @@ const repeatableConfigImage = [
   },
 ];
 
-function changeHeroTextAndImage(moveForward) {
+function changeHeroTextAndImage(moveForward, reduceMotion) {
   // find visible image id
   const currentImgElem = document.getElementsByClassName("primary")[0];
   const currentIndex = parseInt(currentImgElem.id.split("-")[2]);
@@ -86,8 +86,22 @@ function changeHeroTextAndImage(moveForward) {
   currentImgElem.classList.remove("primary");
   // replace hero text to match new slide
   const textElem = document.getElementById("hero-text");
-  textElem.innerText = "";
-  typewriterEffect(textElem, heroTextAndImage[nextIndex].text);
+  if (!reduceMotion) {
+    textElem.innerText = "";
+    typewriterEffect(textElem, heroTextAndImage[nextIndex].text);
+  } else {
+    textElem.innerText = heroTextAndImage[nextIndex].text;
+  }
+}
+
+function setNewHeroInterval(interval) {
+  clearInterval(interval);
+  interval = setInterval(
+    changeHeroTextAndImage,
+    5000,
+    true,
+    mediaQuery.matches
+  );
 }
 
 function typewriterEffect(textElem, newText) {
