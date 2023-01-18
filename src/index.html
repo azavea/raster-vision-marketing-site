@@ -120,30 +120,36 @@
               <h1
                 id="hero-text"
                 class="display my-2 text-3xl leading-tight sm:text-4xl"
+                aria-hidden="true"
               ></h1>
+              <h1 id="hero-text-sr" class="sr-only">
+                deep learning on satellite and aerial imagery
+              </h1>
             </div>
             <div class="h-2 sm:h-10"></div>
             <div class="flex gap-3 top-8 sm:top-32">
-              <div
+              <button
                 id="left-button"
                 class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
               >
                 <img
                   src="images/icon-chevron-left.svg"
-                  alt="Navigate to next use case"
+                  alt="Navigate to previous use case"
                   class="mx-auto my-hero-button-arrow"
+                  aria-hidden="true"
                 />
-              </div>
-              <div
+              </button>
+              <button
                 id="right-button"
                 class="rounded-full bg-gray-50 h-hero-button w-hero-button cursor-pointer"
               >
                 <img
                   src="images/icon-chevron-right.svg"
-                  alt="Navigate to previous use case"
+                  alt="Navigate to next use case"
                   class="mx-auto my-hero-button-arrow"
+                  aria-hidden="true"
                 />
-              </div>
+              </button>
             </div>
             <div class="h-8 sm:h-20"></div>
             <div

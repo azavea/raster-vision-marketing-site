@@ -85,6 +85,8 @@ function changeHeroTextAndImage(moveForward, reduceMotion) {
   currentImgElem.classList.add("secondary");
   currentImgElem.classList.remove("primary");
   // replace hero text to match new slide
+  const srTextElem = document.getElementById("hero-text-sr");
+  srTextElem.innerText = heroTextAndImage[nextIndex].text;
   const textElem = document.getElementById("hero-text");
   if (!reduceMotion) {
     textElem.innerText = "";
