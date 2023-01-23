@@ -1095,7 +1095,10 @@
           <div
             class="flex flex-col-reverse sm:flex-row justify-center text-center xsmall-body text-white mt-16"
           >
-            <div>©2022 Azavea Inc. All rights reserved.</div>
+            <div>
+              ©<span id="copyright-year"></span> Azavea Inc. All rights
+              reserved.
+            </div>
             <div class="mb-2 sm:mb-0">
               <a
                 href="https://azavea.com/privacy-policy/"
@@ -1201,6 +1204,9 @@
         event.preventDefault();
         submitContactForm();
       });
+    </script>
+    <script>
+      $("#copyright-year").html(new Date().getFullYear());
     </script>
   </body>
 </html>
