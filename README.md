@@ -14,4 +14,4 @@ To compile the code with Tailwind CSS and update on style change, run `npm run c
 
 In another tab, start the server by running `npm start`. View at localhost:8000. Refresh to see changes.
 
-As a note, there is no staging site and all GitHub Actions builds (including test branches, PRs, and merges into `master`) will be deployed to the live site.
+As a note, there is no staging site and all GitHub Actions builds (including test branches and merges into `master`) will be deployed to the live site.
