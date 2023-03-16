@@ -34,10 +34,12 @@ module.exports = {
         900: "#1D4044",
       },
       blue: {
+        400: "#4CA5DC",
         700: "#2A3644",
         800: "#031617",
         900: "#1F2934",
       },
+      green: "#6DC24A",
     },
     fontSize: {
       xs: "0.75rem",
@@ -59,6 +61,7 @@ module.exports = {
       },
       white: "#FFF",
       blue: "#A0DDE6",
+      green: "#6DC24A",
     },
     extend: {
       fontFamily: {
@@ -98,7 +101,7 @@ module.exports = {
         hero: "775px",
         "hero-button": "35px",
         "header-text": "50%",
-        "contact-us-name": "214px"
+        "contact-us-name": "214px",
       },
       margin: {
         "hero-button-arrow": "11px",
